@@ -1,3 +1,16 @@
 baseURL = "https://techarge.co.uk/"
 languageCode = "en-us"
 title = "Techarge Site"
+
+[module]
+	[[module.imports]]
+	    disable = false
+		ignoreConfig = false
+		ignoreImports = false
+		path = "github.com/gohugoio/hugo-mod-jslibs/alpinejs"
+	[[module.imports]]
+	    disable = false
+		ignoreConfig = false
+		ignoreImports = false
+		path = "github.com/gohugoio/hugo-mod-jslibs/turbolinks"
+
