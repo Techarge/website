@@ -1,0 +1,31 @@
+{
+  "name": "techarge",
+  "version": "1.0.0",
+  "description": "techarge website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+	"dev": "hugo -w server ",
+	"build": "NODE_ENV=production hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Techarge/website.git"
+  },
+  "keywords": [
+    "techarge",
+    "website"
+  ],
+  "author": "Ling Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Techarge/website/issues"
+  },
+  "homepage": "https://github.com/Techarge/website#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.2"
+  }
+}
