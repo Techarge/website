@@ -1,7 +1,101 @@
 {{ define "main" }}
-<main class="container mx-auto px-4 py-24 bg-gray-100">
-    <h1>Welcome to Hugo with Tailwind CSS</h1>
-    <div class="text-gray-500">This is an example site with Tailwind CSS 2</div>
+<main>
+    <section class="bg-tc-green">
+        <div class="container">
+            <h1>Big Data</h1>
+            <h1>Clarity</h1>
+            <p>We help complex industries fix core problems through technology
+                Techarge is a software consultancy providing on-demand CTO expertise and development services.
+                We help VC-backed start-ups and enterprise companies define and develop new software platforms and web
+                applications.</p>
+            <a class="primaryButton inline-block" href="">Contact us</a>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container">
+            <h2>About Techarge</h2>
+            <p>With over 25 years experience in financial services, healthcare and clean energy, our expert team offers
+                end-to-end technology consultancy and development services.
+                We love making sense of multi-threaded challenges and helping our clients tackle complex problems with
+                original ideas and innovative thinking.</p>
+            <a class="primaryButton inline-block" href="">Find out more about us</a>
+        </div>
+    </section>
+    <section class="bg-tc-green">
+        <div class="container">
+            <h1>Our services</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-75px md:gap-20px gap-25px">
+                <div class="rounded bg-tc-grey py-36px px-20px">
+                    <h4>Software & Web Application Development</h4>
+                    <p>Our team consists of UI experts, UX designers and full-stack developers. Drawing on their
+                        expertise, we deliver a full range of development services across multiple frameworks and
+                        languages.</p>
+
+                </div>
+                <div class="rounded bg-tc-grey py-36px px-20px">
+                    <h4>Technology Consultancy</h4>
+                    <p>Our consultants have worked at a CTO-level across multiple industries, managing the full
+                        software-development lifecycle. Acting as a strategic advisor, we can help select the right
+                        technologies and drive forward digital change.</p>
+
+                </div>
+                <div class="rounded bg-tc-grey py-36px px-20px">
+                    <h4>Data Integration and Visualisation</h4>
+                    <p>We help companies unlock the power of their data by identifying, collecting and analysing key
+                        data points from multiple sources. Leveraging powerful BI tools, we interpret and visualise
+                        complex data streams, turning them into clear dashboards with actionable insights</p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container">
+            Software
+        </div>
+    </section>
+    <section class="bg-tc-grey">
+        <div class="container">
+            <h2>Agile, innovative and iterative. This is how we deliver.</h2>
+            <h3>1 - Introduction Call</h3>
+            <p>All good things start with a conversation. An introductory call helps us mutually decide if we are a good
+                fit and align on high-level objectives. It's also your chance to ask us any questions.</p>
+            <h3>2 - Discovery Session</h3>
+            <p>This is where we really dig into your business challenges, users, priorities and goals to define what
+                success looks like, timelines and deliverables. We spend a lot of time listening here.</p>
+            <h3>3 - Design Sprint</h3>
+            <p>Working with our UX and UI partners, we conduct thorough user research and prototyping exercises to
+                ensure our solution is viable, scalable and ultimately adding value. This gives us confidence that we
+                are building the right solution.</p>
+            <h3>4 - Development Sprint</h3>
+            <p>Taking our clearly defined scope and validated concepts, we follow agile delivery processes to translate
+                wireframes and process flows into fully functioning applications. We thoroughly test our code on every
+                release</p>
+            <h3>5 - Support & Maintenance</h3>
+            <p>All software continues to evolve after launch. We work with clients on an ongoing basis to iteratively
+                define, design and build new features and functionalities, alongside offering on-going maintenance and
+                support packages.</p>
+            <h3>6 - Handover & Training</h3>
+            <p>We are able to support the platform's transition to an internal team, conducting a comprehensive handover
+                process to ensure complete continuity. We can also provide on-going training and mentoring for your
+                development team.</p>
+
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
+            <h3 class="flex">Subscribe to the latest tech trends</h3>
+            <input class="border-b border-tc-orange text-orange outline-none w-full h-26px placeholder-tc-orange"
+                   placeholder="your email">
+        </div>
+    </section>
+
+
 </main>
 {{ end }}
 
