@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-    <section class="bg-tc-green">
+    <section class="bg-tc-green pt-50px pb-65px md:pt-125px md:pb-75px lg:pt-185px lg:pb-120px overflow-auto">
         <div class="container">
             <h1>Big Data</h1>
             <h1>Clarity</h1>
@@ -8,82 +8,114 @@
                 Techarge is a software consultancy providing on-demand CTO expertise and development services.
                 We help VC-backed start-ups and enterprise companies define and develop new software platforms and web
                 applications.</p>
-            <a class="primaryButton inline-block" href="">Contact us</a>
+            <a class="button-medium inline-block text-tc-orange float-right" href="">Contact us</a>
         </div>
     </section>
-    <section class="bg-white">
+    <section class="bg-white pt-80px pb-25px md:pt-60px md:pb-56px lg:pt-100px lg:pb-44px">
         <div class="container">
             <h2>About Techarge</h2>
             <p>With over 25 years experience in financial services, healthcare and clean energy, our expert team offers
                 end-to-end technology consultancy and development services.
                 We love making sense of multi-threaded challenges and helping our clients tackle complex problems with
                 original ideas and innovative thinking.</p>
-            <a class="primaryButton inline-block" href="">Find out more about us</a>
+            <a class="button-small inline-block text-tc-orange" href="">Find out more about us</a>
         </div>
     </section>
-    <section class="bg-tc-green">
+    <section class="bg-tc-green pb-110px pt-35px md:pt-60px md:pb-75px lg:py-52px">
         <div class="container">
-            <h1>Our services</h1>
+            <h1 class="pb-10px md:pb-40px lg:pb-20px">Our services</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-75px md:gap-20px gap-25px">
-                <div class="rounded bg-tc-grey py-36px px-20px">
-                    <h4>Software & Web Application Development</h4>
+                <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                    <div class="bg-white md:w-194px md:h-194px xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto">
+                        <img class="w-180px md:w-210px" alt="Techarge logo" src="/images/site.svg">
+                    </div>
+                    <h4 class="text-center">Software & Web Application Development</h4>
                     <p>Our team consists of UI experts, UX designers and full-stack developers. Drawing on their
                         expertise, we deliver a full range of development services across multiple frameworks and
                         languages.</p>
 
                 </div>
-                <div class="rounded bg-tc-grey py-36px px-20px">
-                    <h4>Technology Consultancy</h4>
+                <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                    <div class="bg-white xs:w-165px xs:h-165px md:w-194px md:h-194px rounded-full mb-13px md:mb-15px m-auto">
+                        <img class="w-180px md:w-210px" alt="Techarge logo" src="/images/pingpong.svg">
+                    </div>
+                    <h4 class="text-center">Technology Consultancy</h4>
                     <p>Our consultants have worked at a CTO-level across multiple industries, managing the full
                         software-development lifecycle. Acting as a strategic advisor, we can help select the right
                         technologies and drive forward digital change.</p>
 
                 </div>
-                <div class="rounded bg-tc-grey py-36px px-20px">
+                <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                    <div class="bg-white md:w-194px md:h-194px xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto">
+                        <img class="w-180px md:w-210px" alt="Techarge logo" src="/images/globe.svg">
+                    </div>
                     <h4>Data Integration and Visualisation</h4>
                     <p>We help companies unlock the power of their data by identifying, collecting and analysing key
                         data points from multiple sources. Leveraging powerful BI tools, we interpret and visualise
                         complex data streams, turning them into clear dashboards with actionable insights</p>
-
                 </div>
-
-
             </div>
-
-
         </div>
         </div>
     </section>
     <section class="bg-white">
-        <div class="container">
-            Software
+        <div class="container grid grid-cols-4 md:grid-cols-8 items-center gap-x-21px sm:26px md:41px
+                    py-31px md:py-37px">
+             <img class="" alt="Django logo" src="/images/django-logo.svg">
+            <img class="" alt="Terraform logo" src="/images/terraform-black 1.svg">
+            <img class="" alt="Python logo" src="/images/Python-logo 1.svg">
+            <img class="" alt="PostgresSQL logo" src="/images/PostgreSQL_logo.1color_blue 1.svg">
+            <img class="" alt="React logo" src="/images/React-logo.svg">
+            <img class="" alt="Svelte logo" src="/images/svelte-logo-horizontal_BLK 1.svg">
+            <img class="" alt="Salt Stack logo" src="/images/Salt-Stack-logo.svg">
+            <img class="" alt="Wagtail logo" src="/images/wagtail-logo.svg">
+
         </div>
     </section>
-    <section class="bg-tc-grey">
+    <section class="bg-tc-grey pt-52px pb-95px md:pt-70px md:pb-65px lg:pt-155px lg:pb-230px">
         <div class="container">
-            <h2>Agile, innovative and iterative. This is how we deliver.</h2>
+            <h2 class="hidden sm:block mb-50px">Agile, innovative and iterative. This is how we deliver.</h2>
             <h3>1 - Introduction Call</h3>
-            <p>All good things start with a conversation. An introductory call helps us mutually decide if we are a good
-                fit and align on high-level objectives. It's also your chance to ask us any questions.</p>
+            <div class="flex items-center">
+                <img class="w-148px" alt="Techarge logo" src="/images/mobile.svg">
+                <p>All good things start with a conversation. An introductory call helps us mutually decide if we are a
+                    good
+                    fit and align on high-level objectives. It's also your chance to ask us any questions.</p>
+            </div>
             <h3>2 - Discovery Session</h3>
-            <p>This is where we really dig into your business challenges, users, priorities and goals to define what
-                success looks like, timelines and deliverables. We spend a lot of time listening here.</p>
+            <div class="flex items-center">
+                <img class="w-148px" alt="Techarge logo" src="/images/pencil 2.svg">
+                <p>This is where we really dig into your business challenges, users, priorities and goals to define what
+                    success looks like, timelines and deliverables. We spend a lot of time listening here.</p>
+            </div>
             <h3>3 - Design Sprint</h3>
-            <p>Working with our UX and UI partners, we conduct thorough user research and prototyping exercises to
-                ensure our solution is viable, scalable and ultimately adding value. This gives us confidence that we
-                are building the right solution.</p>
+            <div class="flex items-center">
+                <img class="w-148px" alt="Techarge logo" src="/images/cooking.svg">
+                <p>Working with our UX and UI partners, we conduct thorough user research and prototyping exercises to
+                    ensure our solution is viable, scalable and ultimately adding value. This gives us confidence that
+                    we are building the right solution.</p>
+            </div>
             <h3>4 - Development Sprint</h3>
-            <p>Taking our clearly defined scope and validated concepts, we follow agile delivery processes to translate
-                wireframes and process flows into fully functioning applications. We thoroughly test our code on every
-                release</p>
+            <div class="flex items-center">
+                <img class="w-148px" alt="Techarge logo" src="/images/work.svg">
+                <p>Taking our clearly defined scope and validated concepts, we follow agile delivery processes to
+                    translate wireframes and process flows into fully functioning applications. We thoroughly test our
+                    code on every release</p>
+            </div>
             <h3>5 - Support & Maintenance</h3>
-            <p>All software continues to evolve after launch. We work with clients on an ongoing basis to iteratively
-                define, design and build new features and functionalities, alongside offering on-going maintenance and
-                support packages.</p>
+            <div class="flex items-center">
+                <img class="w-148px" alt="Techarge logo" src="/images/chip.svg">
+                <p>All software continues to evolve after launch. We work with clients on an ongoing basis to
+                    iteratively define, design and build new features and functionalities, alongside offering
+                    on-going maintenance and support packages.</p>
+            </div>
             <h3>6 - Handover & Training</h3>
-            <p>We are able to support the platform's transition to an internal team, conducting a comprehensive handover
-                process to ensure complete continuity. We can also provide on-going training and mentoring for your
-                development team.</p>
+            <div class="flex items-center">
+                <img class="w-148px" alt="Techarge logo" src="/images/confirmed.svg">
+                <p>We are able to support the platform's transition to an internal team, conducting a comprehensive
+                    handover process to ensure complete continuity. We can also provide on-going training and
+                    mentoring for your development team.</p>
+            </div>
 
         </div>
     </section>

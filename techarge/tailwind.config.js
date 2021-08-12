@@ -1,9 +1,19 @@
+var defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
     purge: ['layouts/**/*.html'],
     darkMode: false, // or 'media' or 'class'
     theme: {
         container: {
             center: true,
+        },
+        screens: {
+            'xs': '400px',
+            'sm': {'min': '640px'},
+            'md': {'min': '768px'},
+            'lg': {'min': '1024px'},
+            'xl': {'min': '1280px'},
+            '2xl': {'min': '1536px'},
         },
         extend: {
             colors: {
@@ -20,27 +30,60 @@ module.exports = {
                 '20px': '20px',
                 '26px': '26px',
                 '60px': '60px',
+                '165px': '165px',
+                '194px': '194px',
+                'fit-c': 'fit-content'
             },
             width: {
                 '32px': '32px',
                 '60px': '60px',
+                '85px': '85px',
+                '98px': '98px',
+                '148px': '148px',
+                '165px': '165px',
+                '180px': '180px',
+                '194px': '194px',
+                '200px': '200px',
+                '210px': '210px',
             },
             padding: {
+                 '10px': '10px',
                 '20px': '20px',
                 '25px': '25px',
+                '31px': '31px',
                 '36px': '36px',
+                '35px': '35px',
+                '37px': '37px',
+                 '40px': '40px',
+                '44px': '44px',
                 '48px': '48px',
+                '50px': '50px',
+                '52px': '52px',
+                '56px': '56px',
                 '58px': '58px',
                 '60px': '60px',
+                '65px': '65px',
                 '70px': '70px',
                 '75px': '75px',
+                '80px': '80px',
                 '90px': '90px',
+                '95px': '95px',
+                '100px': '100px',
+                '110px': '110px',
+                '120px': '120px',
+                '125px': '125px',
+                '155px': '155px',
+                '185px': '185px',
+                '230px': '230px',
                 '310px': '310px',
             },
             margin: {
+                '15px': '15px',
+                '13px': '13px',
                 '25px': '25px',
                 '28px': '28px',
                 '30px': '30px',
+                '50px': '50px',
                 '60px': '60px',
                 '70px': '70px',
                 '75px': '75px',
@@ -55,9 +98,14 @@ module.exports = {
                 '20px': '20px',
                 '21px': '21px',
                 '25px': '25px',
+                '26px': '26px',
+                '41px': '41px',
                 '75px': '75px',
                 '85px': '85px',
             },
+               borderRadius: {
+        '20px': '20px',
+               }
         },
     },
     variants: {

@@ -1,47 +1,56 @@
 <section class="bg-tc-green">
-<nav class="flex items-center container justify-between flex-wrap bg-tc-green pt-25px md:pt-60px lg:pt-115px pb-0">
-	<div class="flex items-center flex-shrink-0 text-white mr-6">
-		<img alt="Techarge logo" src='Techarge-logo.svg'/>
-	</div>
-	<div class="hidden md:block">
-		<div class="text-sm md:flex-grow">
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-				Home
-			</a>
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-				About
-			</a>
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-				Services
-			</a>
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-				Blog
-			</a>
-		</div>
-	</div>
+    <nav class="flex items-center container justify-between flex-wrap bg-tc-green pt-25px md:pt-60px lg:pt-115px pb-0">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
 
-	<div class="block md:hidden">
-		<div x-data="{open:false}">
-			<button @click="open=true" class="flex items-center h-60px w-60px bg-tc-yellow text-teal-200 border-teal-400 hover:text-white hover:border-white">
-				<svg class="fill-current m-auto h-20px w-32px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-			</button>
-			<div class="w-full block flex-grow md:flex md:items-center md:w-auto" x-show="open" @click.away="open=false">
-				<div class="text-sm md:flex-grow">
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-						Home
-					</a>
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-						About
-					</a>
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-						Services
-					</a>
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-						Blog
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</nav>
+            <img class="w-98px md:w-200px" alt="Techarge logo" src="/images/Logo.svg">
+        </div>
+        <div class="hidden md:block">
+            <div class="text-sm md:flex-grow">
+                <a href="#responsive-header"
+                   class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                    Home
+                </a>
+                <a href="#responsive-header"
+                   class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                    About
+                </a>
+                <a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
+                    Services
+                </a>
+            </div>
+        </div>
+
+        <div class="block md:hidden">
+            <div x-data="{open:false}">
+                <button @click="open=true"
+                        class="flex items-center h-60px w-60px bg-tc-yellow text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                    <svg class="fill-current m-auto h-20px w-32px" viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                    </svg>
+                </button>
+                <div class="w-full bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto" x-show="open"
+                     @click.away="open=false">
+                    <div class="text-sm md:flex-grow">
+                        <a href="#responsive-header"
+                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                            Home
+                        </a>
+                        <a href="#responsive-header"
+                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                            About
+                        </a>
+                        <a href="#responsive-header"
+                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
+                            Services
+                        </a>
+                        <a href="#responsive-header"
+                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 </section>
