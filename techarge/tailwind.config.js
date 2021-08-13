@@ -1,5 +1,3 @@
-var defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
     purge: ['layouts/**/*.html'],
     darkMode: false, // or 'media' or 'class'
@@ -45,17 +43,19 @@ module.exports = {
                 '194px': '194px',
                 '200px': '200px',
                 '210px': '210px',
+                'fit-c': 'fit-content'
             },
             padding: {
-                 '10px': '10px',
+                '10px': '10px',
                 '20px': '20px',
                 '25px': '25px',
                 '31px': '31px',
                 '36px': '36px',
                 '35px': '35px',
                 '37px': '37px',
-                 '40px': '40px',
+                '40px': '40px',
                 '44px': '44px',
+                '45px': '45px',
                 '48px': '48px',
                 '50px': '50px',
                 '52px': '52px',
@@ -78,16 +78,27 @@ module.exports = {
                 '310px': '310px',
             },
             margin: {
+                '-40px': '-40px',
+                '10px': '10px',
                 '15px': '15px',
                 '13px': '13px',
+                '20px': '20px',
                 '25px': '25px',
+                '27px': '27px',
                 '28px': '28px',
                 '30px': '30px',
+                '40px': '40px',
                 '50px': '50px',
                 '60px': '60px',
                 '70px': '70px',
                 '75px': '75px',
+                '95px': '95px',
                 '115px': '115px',
+                '128px': '128px',
+
+            },
+            inset: {
+                '75px': '75px',
             },
             fontSize: {
                 '11px': '11px',
@@ -99,13 +110,37 @@ module.exports = {
                 '21px': '21px',
                 '25px': '25px',
                 '26px': '26px',
+                '33px': '33px',
                 '41px': '41px',
+                '46px': '46px',
                 '75px': '75px',
                 '85px': '85px',
             },
-               borderRadius: {
-        '20px': '20px',
-               }
+            borderRadius: {
+                '20px': '20px',
+            },
+            animation: {
+                'slideInFromLeft': 'slideInFromLeft 1s ease-in-out 0s 1',
+                'slideInFromRight': 'slideInFromRight 1s ease-in-out 0s 1',
+                'fadeInFromBottom': 'fadeInFromBottom 1.5s ease-in 0s 1',
+            },
+            keyframes: {
+                slideInFromLeft: {
+                    '0%': {transform: 'translateX(-100%);', opacity: '0.25;'},
+                    '50%': {opacity: '0.75;'},
+                    '100%': {transform: 'translateX(0);', opacity: '1;'},
+                },
+                slideInFromRight: {
+                    '0%': {transform: 'translateX(100%);', opacity: '0.25;'},
+                    '50%': {opacity: '0.75;'},
+                    '100%': {transform: 'translateX(0);', opacity: '1;'},
+                },
+                fadeInFromBottom: {
+                    '0%': {transform: 'translateY(80px);', opacity: '0;'},
+                    '50%': {opacity: '0.75;'},
+                    '100%': {transform: 'translateY(0);', opacity: '1;'},
+                },
+            },
         },
     },
     variants: {
