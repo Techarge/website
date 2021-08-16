@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    	{{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
-	{{ partialCached "jslibs/turbolinks/script-src.html" "-" }}
+    {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
+    {{ partialCached "jslibs/turbolinks/script-src.html" "-" }}
 
     {{ partial "head.html" . }}
 </head>
 <body>
 {{ partial "header/site-nav.html" . }}
-	about page content here
-  <section class="bg-white">
-        <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
-            {{ partial "subscribe.html" . }}
+<div class="container">
+    <h1>About us</h1>
+</div>
+
+<section class="bg-tc-green pb-110px pt-35px md:pt-60px md:pb-75px lg:py-52px">
+    <div class="container">
+        <h1 class="pb-10px md:pb-40px lg:pb-20px">Our teams</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-75px md:gap-20px gap-25px">
+            <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                <div class="bg-white md:w-194px md:h-194px xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto">
+                    <img class="w-180px md:w-210px" alt="Techarge logo" src="/images/site.svg">
+                </div>
+                <h4 class="text-center">Ling Li</h4>
+                <p>Tktk kt ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tkTktk kt ktk tk ktk ktk ktk tk ktk ktk
+                    tk kt ktk tk ktk tk ktk tkTktk kt ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tkTktk kt
+                    ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tk
+                </p>
+
+            </div>
+            <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                <div class="bg-white xs:w-165px xs:h-165px md:w-194px md:h-194px rounded-full mb-13px md:mb-15px m-auto">
+                    <img class="w-180px md:w-210px" alt="Techarge logo" src="/images/pingpong.svg">
+                </div>
+                <h4 class="text-center">Ling Li</h4>
+                <p>Tktk kt ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tkTktk kt ktk tk ktk ktk ktk tk ktk ktk
+                    tk kt ktk tk ktk tk ktk tkTktk kt ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tkTktk kt
+                    ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tk
+                </p>
+
+            </div>
+            <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                <div class="bg-white md:w-194px md:h-194px xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto">
+                    <img class="w-180px md:w-210px" alt="Techarge logo" src="/images/globe.svg">
+                </div>
+                <h4 class="text-center">Ling Li</h4>
+                <p>Tktk kt ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tkTktk kt ktk tk ktk ktk ktk tk ktk ktk
+                    tk kt ktk tk ktk tk ktk tkTktk kt ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tkTktk kt
+                    ktk tk ktk ktk ktk tk ktk ktk tk kt ktk tk ktk tk ktk tk
+                </p>
+            </div>
         </div>
-    </section>
-	{{ partial "footer.html" . }}
+    </div>
+    </div>
+</section>
+<section class="bg-white">
+    <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
+        {{ partial "subscribe.html" . }}
+    </div>
+</section>
+{{ partial "footer.html" . }}
 </body>
 </html>
