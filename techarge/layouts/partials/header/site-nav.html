@@ -2,47 +2,51 @@
     <nav class="flex items-center container justify-between flex-wrap bg-tc-green pt-25px md:pt-60px lg:pt-115px pb-0">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
 
-            <img class="w-98px md:w-200px" alt="Techarge logo" src="/images/Logo.svg">
+            <a href="/"><img class="w-98px md:w-200px" alt="Techarge logo" src="/images/Logo.svg"></a>
         </div>
         <div class="hidden md:block">
             <div class="text-sm md:flex-grow">
                 <a href="/"
-                   class="block mt-4 md:inline-block md:mt-0 text-light-black hover:text-white mr-60px">
+                   class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
                     <p>Home</p>
                 </a>
                 <a href="/about"
-                   class="block mt-4 md:inline-block md:mt-0 text-light-black hover:text-white mr-60px">
+                   class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
                     <p>About</p>
                 </a>
-                <a href="" class="block mt-4 md:inline-block md:mt-0 text-light-black hover:text-white mr-60px">
-                    <p>Services</p>
+                <a href="" class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+                    <p>Team</p>
                 </a>
             </div>
         </div>
 
-        <div class="block md:hidden">
+        <div class="block md:hidden fixed flex right-10px top-30px">
             <div x-data="{open:false}">
                 <button @click="open=true"
-                        class="flex items-center h-60px w-60px bg-tc-yellow text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                    <svg class="fill-current m-auto h-20px w-32px" viewBox="0 0 20 20"
+                        class="flex items-center h-60px w-60px bg-tc-yellow text-teal-200">
+
+                   <svg x-show="!open" class="fill-current m-auto h-20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+                    <svg x-show="open" class="fill-current m-auto h-20px w-32px" viewBox="0 0 20 20"
                          xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                     </svg>
                 </button>
-                <div class="w-full bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto" x-show="open"
+                <div class="w-full bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0" x-show="open"
                      @click.away="open=false">
                     <div class="text-sm md:flex-grow">
                         <a href="/"
-                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 mr-4">
                             Home
                         </a>
                         <a href="/about"
-                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 mr-4">
                             About
                         </a>
                         <a href=""
-                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-                            Services
+                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 ">
+                            Team
                         </a>
                     </div>
                 </div>

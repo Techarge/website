@@ -1,51 +1,54 @@
 {{ define "main" }}
 <main>
     <section class=" bg-tc-green pt-50px pb-65px md:pt-125px md:pb-75px lg:pt-185px lg:pb-120px overflow-auto">
-        <div class="container">
+        <div class="animate-slideInFromRight container">
             <h1>Big Data</h1>
             <h1>Clarity</h1>
             <p>We help complex industries fix core problems through technology
                 Techarge is a software consultancy providing on-demand CTO expertise and development services.
                 We help VC-backed start-ups and enterprise companies define and develop new software platforms and web
                 applications.</p>
-            <a class="mt-30px button-medium inline-block text-tc-orange float-right" href="">Contact us</a>
+            <a class="mt-30px button-medium inline-block text-tc-orange float-right" href="/contact">Contact us</a>
         </div>
     </section>
     <section class="bg-white pt-80px pb-25px md:pt-60px md:pb-56px lg:pt-100px lg:pb-44px">
-        <div class="container grid md:grid-cols-2">
-            <div class="order-2">
-                <div class="bg-tc-grey w-fit-c rounded-20px">
-                     <img alt="data icon" src="/images/data.svg">
+        <div class="container gap-10px md:gap-x-85px lg:gap-x-97px grid grid-cols-2">
+            <div class="order-1 relative mt-65px h-355px">
+                <div class="bg-tc-grey w-fit-c h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-10px rounded-20px flex absolute top-20px right-120px z-10">
+                    <img alt="light bulb icon" src="/images/light bulb.svg">
                 </div>
-                <div class="bg-tc-grey w-fit-c rounded-20px">
-                     <img alt="light bulb icon" src="/images/light bulb.svg">
+                <div class="bg-tc-green rounded-20px h-72px w-72px md:h-130px md:w-130px lg:w-158px lg:h-158px p-10px md:p-15px lg:p-25px flex justify-center absolute top-110px right-0">
+                    <img alt="lamp icon" src="/images/Lamp.svg">
                 </div>
-                <div class="bg-tc-green w-fit-c rounded-20px">
-                     <img alt="lamp icon" src="/images/Lamp.svg">
+                <div class="bg-tc-grey rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px md:p-25px lg:p-32px flex justify-center absolute top-200px">
+                    <img alt="data icon" src="/images/data.svg">
                 </div>
             </div>
-            <div class="md:order-2">
+            <div class="md:order-2 col-span-2 md:col-span-1">
                 <h2 class="mb-15px md:mb-30px">About Techarge</h2>
                 <p>With over 25 years experience in financial services, healthcare and clean energy, our expert team
                     offers end-to-end technology consultancy and development services.
                     We love making sense of multi-threaded challenges and helping our clients tackle complex problems
                     with original ideas and innovative thinking.</p>
-                <a class="mt-15px button-small inline-block text-tc-orange float-right" href="">Find out more about us</a>
+                <a class="mt-15px button-small inline-block text-tc-orange float-right" href="/about">Find out more
+                    about us</a>
             </div>
-        </div>
-        <div class="container md:flex">
-            <aside class="relative inline-block pl-45px pt-45px md:mr-95px lg:mr-128px">
-                <h4 class="top-75px -ml-40px whitespace-nowrap origin-center transform -rotate-90 absolute top-0 left-0">A member of</h4>
-                <img class="nominet" alt="nominet logo" src="/images/nominet.svg">
-            </aside>
-            <div>
-                <h4 class="mb-10px md:mb-20px lg:mb-27px">Happy Clients</h4>
-            <div class="inline-grid grid-cols-4 gap-18px md:gap-33px lg:gap-46px">
-                <img class="" alt="Crown Commercial Serive Supplier logo" src="/images/CCS.svg">
-                 <img class="" alt="EMSX logo" src="/images/CCS.svg">
-                 <img class="" alt="Felcana logo" src="/images/CCS.svg">
-                 <img class="" alt="Sayso Medical logo" src="/images/CCS.svg">
-            </div>
+            <div class="md:flex md:order-3 md:col-span-2 mt-80px">
+                <aside class="relative inline-block md:pl-45px pt-45px md:mr-95px lg:mr-128px">
+                    <h4 class="md:top-75px md:-ml-40px md:whitespace-nowrap md:origin-center md:transform md:-rotate-90 md:absolute md:left-0">
+                        A member of</h4>
+                    <img class="nominet w-116px h-110px" alt="nominet logo" src="/images/nominet.svg">
+                </aside>
+                <div class="relative grid grid-cols-1 md:flex items-end w-full">
+                    <h4 class="md:top-75px md:-ml-40px md:whitespace-nowrap md:origin-center md:transform md:-rotate-90 md:absolute md:top-0 md:-left-20px">
+                        Happy clients</h4>
+                    <div class="md:relative md:top-3 inline-grid grid-cols-4 gap-18px md:gap-33px lg:gap-46px ml-10px md:ml-20px lg:ml-27px w-full">
+                        <img class="" alt="Crown Commercial Serive Supplier logo" src="/images/CCS.svg">
+                        <img class="" alt="EMSX logo" src="/images/CCS.svg">
+                        <img class="" alt="Felcana logo" src="/images/CCS.svg">
+                        <img class="" alt="Sayso Medical logo" src="/images/CCS.svg">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
