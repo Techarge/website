@@ -4,6 +4,7 @@ module.exports = {
     theme: {
         container: {
             center: true,
+            padding: '40px',
         },
         screens: {
             'xs': '400px',
@@ -64,6 +65,7 @@ module.exports = {
                 '194px': '194px',
                 '200px': '200px',
                 '210px': '210px',
+                '415px': '415px',
                 'fit-c': 'fit-content'
             },
             padding: {
@@ -101,6 +103,7 @@ module.exports = {
             },
             margin: {
                 '-40px': '-40px',
+                '-20px': '-20px',
                 '10px': '10px',
                 '15px': '15px',
                 '13px': '13px',
@@ -116,6 +119,7 @@ module.exports = {
                 '70px': '70px',
                 '75px': '75px',
                 '80px': '80px',
+                '90px': '90px',
                 '95px': '95px',
                 '115px': '115px',
                 '128px': '128px',
@@ -126,10 +130,17 @@ module.exports = {
                 '10px': '10px',
                 '20px': '20px',
                 '30px': '30px',
+                '40px': '40px',
+                '60px': '60px',
                 '75px': '75px',
                  '110px': '110px',
                 '120px': '120px',
+                '150px': '150px',
                 '200px': '200px',
+                '10%': '10%',
+                '25%': '25%',
+                '28': '7rem',
+                '32': '8rem',
             },
             fontSize: {
                 '11px': '11px',
@@ -151,6 +162,7 @@ module.exports = {
             },
             borderRadius: {
                 '20px': '20px',
+                '7px': '7px',
             },
             animation: {
                 'slideInFromLeft': 'slideInFromLeft 1s ease-in-out 0s 1',
