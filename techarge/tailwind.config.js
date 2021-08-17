@@ -35,13 +35,19 @@ module.exports = {
                 '94px': '94px',
                 '110px': '110px',
                 '115px': '115px',
+                '120px': '120px',
                 '130px': '130px',
                 '150px': '150px',
                 '158px': '158px',
                 '165px': '165px',
+                '173px': '173px',
                 '182px': '182px',
                 '194px': '194px',
+                '200px': '200px',
+                '289px': '289px',
+                '335px': '335px',
                 '355px': '355px',
+                '481px': '481px',
                 'fit-c': 'fit-content'
             },
             width: {
@@ -58,6 +64,7 @@ module.exports = {
                 '130px': '130px',
                 '148px': '148px',
                 '150px': '150px',
+                '152px': '152px',
                 '158px': '158px',
                 '165px': '165px',
                 '180px': '180px',
@@ -65,7 +72,13 @@ module.exports = {
                 '194px': '194px',
                 '200px': '200px',
                 '210px': '210px',
+                '238px': '238px',
+                '255px': '255px',
+                '398px': '398px',
                 '415px': '415px',
+                '424px': '424px',
+                '640px': '640px',
+                '662px': '662px',
                 'fit-c': 'fit-content'
             },
             padding: {
@@ -121,11 +134,15 @@ module.exports = {
                 '80px': '80px',
                 '90px': '90px',
                 '95px': '95px',
+                '110px': '110px',
                 '115px': '115px',
                 '128px': '128px',
+                '130px': '130px',
 
             },
             inset: {
+                '-180px': '-180px',
+                '-100px': '-100px',
                 '-20px': '-20px',
                 '10px': '10px',
                 '20px': '20px',
@@ -161,8 +178,12 @@ module.exports = {
                 '97px': '97px',
             },
             borderRadius: {
-                '20px': '20px',
                 '7px': '7px',
+                '20px': '20px',
+                '200px': '200px',
+                '40%': '40%',
+                '50%': '50%',
+
             },
             animation: {
                 'slideInFromLeft': 'slideInFromLeft 1s ease-in-out 0s 1',

@@ -8,9 +8,11 @@
     {{ partial "head.html" . }}
 </head>
 <body>
-	{{ partial "header/site-nav.html" . }}
+<section class="relative overflow-x-hidden">
+{{ partial "header/site-nav.html" . }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer.html" . }}
+</section>
 </body>
 </html>
 
