@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-    <div class="hidden md:flex animate-slideInFromRight absolute md:-right-10px lg:-right-180px top-214px">
+    <div class="hidden md:flex js-show-right absolute md:-right-10px lg:-right-180px top-214px">
         <div class="rounded-tl-130px lg:rounded-tl-50% w-210px h-239px lg:w-424px lg:h-481px bg-tc-grey absolute right-0 bottom-0">
 
         </div>
@@ -23,7 +23,7 @@
                     us</a>
             </div>
         </div>
-        <div class="animate-slideInFromLeft absolute -left-50px -left-100px lg:-left-230px lx:-left-180px top-465px sm:top-362px md:top-580px lg:top-550px mt-90px">
+        <div class="js-show-left absolute -left-50px -left-100px lg:-left-230px lx:-left-180px top-465px sm:top-362px md:top-580px lg:top-550px mt-90px">
 
             <div class="rounded-tr-80px md:rounded-tr-100px lg:rounded-tr-200px w-238px h-120px md:w-398px md:h-200px lg:w-662px lg:h-335px bg-tc-orange">
 
@@ -189,7 +189,7 @@
             </div>
 
         </div>
-        <div class="hidden md:flex animate-slideInFromRight absolute md:right-150px md:-mt-320 lg:right-0 lg:-mt-120 lg:mr-20px">
+        <div class="hidden md:flex js-show-right absolute md:right-150px md:-mt-320 lg:right-0 lg:-mt-120 lg:mr-20px">
 
                         <div class="bg-tc-yellow md:left-48 md:bottom-8 lg:left-60 lg:bottom-12 h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-20px rounded-7px flex relative z-10">
                             <img alt="map icon" src="/images/map.svg">
@@ -201,13 +201,13 @@
                             <img alt="bell icon" src="/images/bell.svg">
                         </div>
         </div>
-        <div class="hidden lg:flex animate-slideInFromLeft absolute -left-50px mt-120">
+        <div class="hidden lg:flex js-show-left absolute -left-50px mt-120">
             <div class="rounded-br-200px w-238px h-120px md:w-398px md:h-200px lg:w-662px lg:h-335px bg-tc-orange absolute bottom-0">
             </div>
             <div class="rounded-tr-80px md:rounded-tr-100px lg:rounded-tr-200px  w-152px h-173px md:w-255px md:h-289px lg:w-424px lg:h-481px bg-tc-yellow absolute bottom-0">
             </div>
         </div>
-         <div class="flex animate-slideInFromRight absolute lg:-right-200px -right-10px top-0px xs:top-5965px sm:top-4390px md:top-4390px lg:top-3000px xl:top-2650px mt-14 xs:mt-100px sm:mt-160px md:mt-70px xl:mt-48">
+         <div class="flex js-show-right absolute lg:-right-200px -right-10px top-0px xs:top-5965px sm:top-4390px md:top-4390px lg:top-3000px xl:top-2650px mt-14 xs:mt-100px sm:mt-160px md:mt-70px xl:mt-48">
         <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-60% w-146px h-166px md:w-210px md:h-238px lg:w-437px lg:h-496px bg-tc-green absolute right-0 bottom-0">
 
         </div>
@@ -221,7 +221,51 @@
             {{ partial "subscribe.html" . }}
         </div>
     </section>
+<script>
+    const callback = function (entries) {
+  entries.forEach((entry) => {
+    console.log(entry);
 
+    if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0");
+      entry.target.classList.add("animate-slideInFromRight");
+      entry.target.classList.add("opacity-1");
+
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".js-show-right");
+targets.forEach(function (target) {
+  target.classList.add("opacity-0");
+  observer.observe(target);
+});
+
+
+    const callback2 = function (entries2) {
+  entries2.forEach((entry2) => {
+    console.log(entry2);
+
+    if (entry2.isIntersecting) {
+        entry2.target.classList.remove("opacity-0");
+      entry2.target.classList.add("animate-slideInFromLeft");
+      entry2.target.classList.add("opacity-1");
+
+    }
+  });
+};
+
+const observer2 = new IntersectionObserver(callback2);
+
+const targets2 = document.querySelectorAll(".js-show-left");
+targets2.forEach(function (target2) {
+  target2.classList.add("opacity-0");
+  observer2.observe(target2);
+});
+
+</script>
 </main>
 {{ end }}
 
