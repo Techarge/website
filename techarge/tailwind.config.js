@@ -164,6 +164,7 @@ module.exports = {
                 '128px': '128px',
                 '130px': '130px',
                 '160px': '160px',
+                '200px': '200px',
 
             },
             inset: {
