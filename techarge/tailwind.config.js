@@ -6,6 +6,10 @@ module.exports = {
             center: true,
             padding: '40px',
         },
+         fontFamily: {
+            'josefin': ['Josefin Sans', 'sans-serif'],
+
+         },
         screens: {
             'xs': '400px',
             'sm': {'min': '640px'},
@@ -108,6 +112,7 @@ module.exports = {
                 '48px': '48px',
                 '50px': '50px',
                 '52px': '52px',
+                '55px': '55px',
                 '56px': '56px',
                 '58px': '58px',
                 '60px': '60px',
@@ -145,6 +150,7 @@ module.exports = {
                 '-5px': '-5px',
                 '10px': '10px',
                 '15px': '15px',
+                '16px': '16px',
                 '13px': '13px',
                 '20px': '20px',
                 '25px': '25px',
@@ -178,6 +184,7 @@ module.exports = {
                 '-50px': '-50px',
                 '-20px': '-20px',
                 '-10px': '-10px',
+                '5px': '5px',
                 '10px': '10px',
                 '20px': '20px',
                 '30px': '30px',
@@ -204,12 +211,14 @@ module.exports = {
                 '28': '7rem',
                 '32': '8rem',
                 '112': '28rem',
+                '55vh': '55vh',
                 '65vh': '65vh',
             },
             fontSize: {
                 '11px': '11px',
                 '18px': '18px',
                 '22px': '22px',
+                '30px': '30px',
             },
             gap: {
                 '10px': '10px',

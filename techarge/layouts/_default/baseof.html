@@ -8,7 +8,9 @@
     {{ partial "head.html" . }}
 </head>
 <body>
+
 <section class="relative overflow-x-hidden">
+	{{ partial "contact.html" . }}
 {{ partial "header/site-nav.html" . }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer.html" . }}
