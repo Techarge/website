@@ -20,32 +20,35 @@
             </div>
         </div>
 
-        <div class="block md:hidden fixed flex right-40px top-30px">
+        <div class="block md:hidden fixed flex right-40px top-30px z-20">
             <div x-data="{open:false}">
                 <button @click="open=true"
-                        class="flex items-center h-60px w-60px bg-tc-yellow text-teal-200">
+                        class="flex items-center p-15px h-60px w-60px bg-tc-yellow text-tc-icons focus:outline-none">
+                    <svg class="fill-current text-tc-icons m-auto" x-show="open" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 24L24.2918 1.70816" stroke="#7A7A7A" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M2 2L24.2918 24.2918" stroke="#7A7A7A" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
 
-                   <svg  x-show="open" class="fill-current m-auto h-20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-                    <svg x-show="!open" class="fill-current m-auto h-20px w-32px" viewBox="0 0 20 20"
+                    <svg x-show="!open" class=" fill-current text-tc-icons m-auto" viewBox="0 0 20 20"
                          xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                     </svg>
                 </button>
-                <div class="w-full bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0" x-show="open"
+                <div class="mt-10px pl-60px py-50px w-full text-22px text-tc-light-black bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0"
+                     x-show="open"
                      @click.away="open=false">
-                    <div class="text-sm md:flex-grow">
+                    <div class=" md:flex-grow">
                         <a href="/"
-                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 mr-4">
+                           class="block mb-20px md:inline-block md:mt-0 mr-4">
                             Home
                         </a>
                         <a href="/about"
-                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 mr-4">
+                           class="block mb-20px md:inline-block md:mt-0 mr-4">
                             About
                         </a>
                         <a href=""
-                           class="block mt-4 md:inline-block md:mt-0 text-teal-200 ">
+                           class="block mt-4 md:inline-block md:mt-0 ">
                             Team
                         </a>
                     </div>

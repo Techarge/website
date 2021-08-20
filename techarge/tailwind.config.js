@@ -24,6 +24,7 @@ module.exports = {
                 'tc-dark-green': '#9BC1BC',
                 'tc-dark-grey': '#6C6C6C',
                 'tc-light-black': '#3A3A3A',
+                'tc-icons': '#7A7A7A',
             },
             height: {
                 '20px': '20px',
@@ -93,6 +94,7 @@ module.exports = {
             },
             padding: {
                 '10px': '10px',
+                '15px': '15px',
                 '20px': '20px',
                 '25px': '25px',
                 '31px': '31px',
@@ -206,6 +208,7 @@ module.exports = {
             fontSize: {
                 '11px': '11px',
                 '18px': '18px',
+                '22px': '22px',
             },
             gap: {
                 '10px': '10px',
