@@ -9,26 +9,27 @@
 <body>
 <section class="relative overflow-x-hidden">
     {{ partial "header/site-nav.html" . }}
-    <div class="js-show-left absolute top-214px -left-50px -left-100px lg:-left-230px lx:-left-180px">
+    <div class="js-show-left absolute top-120px md:top-214px -left-50px -left-100px">
 
-        <div class="rounded-tr-80px md:rounded-tr-100px lg:rounded-tr-200px w-238px h-120px md:w-398px md:h-200px lg:w-662px lg:h-335px bg-tc-orange">
+        <div class="rounded-tr-80px md:rounded-tr-50px lg:rounded-tr-100px w-238px h-120px md:w-215px md:h-109px lg:w-382px lg:h-194px bg-tc-orange">
 
         </div>
-        <div class="rounded-br-50% w-152px h-173px md:w-255px md:h-289px lg:w-424px lg:h-481px bg-tc-yellow absolute left-0 top-0">
+        <div class="rounded-br-50% w-152px h-173px md:w-138px md:h-156px lg:w-245px lg:h-278px bg-tc-yellow absolute left-0 top-0">
 
         </div>
     </div>
     <section
-            class=" bg-tc-green pt-50px pb-100px sm:pb-65px md:pt-125px md:pb-75px lg:pt-185px lg:pb-120px overflow-hidden">
+            class=" bg-tc-green pt-50px pb-100px sm:pb-65px md:pt-125px md:pb-75px lg:pt-120px lg:pb-120px overflow-hidden">
 
         <div class="container">
-            <h1 class="text-tc-light-black float-right">About us</h1>
-            <div class="float-right md:mr-88 mt-25px">
-                <p class="lg:w-90% lg:pr-8">With over 25 years experience delivering technology solutions in financial
+            <h1 class="text-tc-light-black float-right md:pr-144px lg:pr-220px">About us</h1>
+            <div class="float-right lg:w-8/12 md:mr-32 lg:mr-88 mt-50px">
+                <p class=" lg:pl-28">With over 25 years experience delivering technology solutions in financial
                     services, healthcare and clean energy, our team specialises in delivering new software and web
-                    applications.
+                    applications.</p>
 
-                    Our clients come to us when they have a critical problem technology can solve, but aren't sure of
+
+                    <p class="mt-30px lg:pl-28">Our clients come to us when they have a critical problem technology can solve, but aren't sure of
                     how to validate and build the best solution.
                     We help VC-backed start-ups and enterprise companies define and develop new software platforms and
                     applications, bringing clarity to complicated requirements and delivering tangible results.
@@ -38,32 +39,50 @@
                     us</a>
             </div>
         </div>
-        <div class="hidden md:flex js-show-right absolute md:-right-10px lg:-right-180px top-65vh mt-8 sm:top-362px md:top-580px lg:top-550px mt- sm:mt-90px">
-            <div class="rounded-tl-130px lg:rounded-tl-50% w-210px h-239px lg:w-424px lg:h-481px bg-tc-grey absolute right-0 bottom-0">
+        <div class="flex js-show-right absolute -right-10px lg:-right-180px top-65vh mt-8 sm:top-362px md:top-680px lg:top-580px lg:top-650px md:mt-68 lg:mt-40">
+            <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-50% w-150px h-171px md:w-210px md:h-239px lg:w-316px lg:h-359px bg-tc-grey absolute right-0 bottom-0">
 
             </div>
-            <div class="rounded-bl-80px lg:rounded-bl-200px w-329px h-166px lg:w-662px lg:h-335px md:bg-tc-dark-green">
+            <div class="rounded-bl-50px md:rounded-bl-80px lg:rounded-bl-100px w-235px h-119px md:w-329px md:h-166px lg:w-494px lg:h-250px bg-tc-dark-green">
 
             </div>
         </div>
 
     </section>
 
-    <section class="bg-white pt-150px sm:pt-80px pb-25px md:pt-60px md:pb-56px lg:pt-100px lg:pb-44px">
-        <h3>Unlock senior technology expertise, whenever you need it</h3>
-        <p>New platforms and applications may be the outcome, but developing a deep understanding of the problem is
-            where we start. We treat every project as a collaborative effort and pride ourselves on our communication,
-            empathy and listening skills.
-            Our experts will act as on-demand CTOs, offering a holistic review of your existing technology
-            infrastructure. We will also work closely with your teams to select the right solutions and develop a clear
-            technology roadmap that supports your core business goals.</p>
-        <h3>Turn complexity into clear solutions</h3>
-        <p>We start at the beginning and deeply engage with our clients to fully understand the problem. We look for the
-            root cause, not the symptoms. This enables us to think innovatively about potential solutions and come up
-            with robust technology implementations that actually deliver value.</p>
+    <section class="bg-white pt-150px sm:pt-80px pb-25px md:pt-130px md:pb-56px lg:pt-100px lg:pb-44px">
+        <div class="container">
+            <div class="lg:pl-110px lg:w-3/ md:mb-50px lg:mb-168px">
+            <h3 class="mb-30px">Unlock senior technology expertise, whenever you need it</h3>
+            <p>New platforms and applications may be the outcome, but developing a deep understanding of the problem is
+                where we start. We treat every project as a collaborative effort and pride ourselves on our
+                communication,empathy and listening skills.</p>
+                <p class="mt-30px">
+                Our experts will act as on-demand CTOs, offering a holistic review of your existing technology
+                infrastructure. We will also work closely with your teams to select the right solutions and develop a
+                clear
+                technology roadmap that supports your core business goals.</p>
+            </div>
+             <div class="js-show-left absolute -left-50px -left-100px lg:-left-230px lx:-left-180px top-65vh mt-8 sm:top-1362px md:top-1580px lg:top-1580px sm:mt-90px">
 
+            <div class="rounded-tr-80px md:rounded-tr-100px lg:rounded-tr-200px w-238px h-120px md:w-398px md:h-200px lg:w-662px lg:h-335px bg-tc-yellow">
+
+            </div>
+            <div class="rounded-br-50% w-152px h-173px md:w-255px md:h-289px lg:w-424px lg:h-481px bg-tc-green absolute left-0 top-0">
+
+            </div>
+        </div>
+            <div class="float-right text-right lg:pl-110px lg:w-3/5 md:mb-70px lg:mb-109px">
+            <h3>Turn complexity into clear solutions</h3>
+            <p>We start at the beginning and deeply engage with our clients to fully understand the problem. We look for
+                the
+                root cause, not the symptoms. This enables us to think innovatively about potential solutions and come
+                up
+                with robust technology implementations that actually deliver value.</p>
+            </div>
+        </div>
         <div class="container gap-10px md:gap-x-85px lg:gap-x-97px grid grid-cols-1 md:grid-cols-2">
-            <div class="hidden md:block order-2 md:order-2 relative mt-65px h-355px lg:ml-75px ml-0px right-75px md:right-0">
+            <div class="hidden md:block order-2 md:order-2 relative mt-65px h-355px lg:pl-110px ml-0px right-75px md:right-0">
 
                 <h3 class="mb-15px md:mb-30px">Work with digital problem solvers</h3>
                 <p>Success to us isn't just about clean code. We know the best outcomes are arrived at when developers
