@@ -109,3 +109,9 @@ p .small {
         transform: rotate(360deg);
     }
 }
+
+@media (min-width: 400px) and (max-width: 639px) {
+    .container {
+        max-width: 639px!important;
+    }
+}
