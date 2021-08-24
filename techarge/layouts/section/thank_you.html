@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
+    {{ partialCached "jslibs/turbolinks/script-src.html" "-" }}
+
+    {{ partial "head.html" . }}
+</head>
+<body>
+<section class="relative overflow-x-hidden">
+    {{ partial "contact.html" . }}
+    {{ partial "header/site-nav.html" . }}
+ <div class="hidden md:flex js-show-right absolute md:-right-10px lg:-right-180px top-214px">
+        <div class="rounded-bl-130px lg:rounded-bl-50% w-290px h-330px lg:w-434px lg:h-493px bg-tc-grey absolute right-0">
+
+        </div>
+        <div class="rounded-tl-80px lg:rounded-tl-150px w-454px h-230px lg:w-678px lg:h-343px bg-tc-dark-green">
+
+        </div>
+    </div>
+    <section class=" bg-tc-green pt-50px pb-100px sm:pb-65px md:pt-125px md:pb-75px lg:pt-185px lg:pb-120px overflow-hidden">
+
+        <div class="container">
+            <h1 class="text-tc-light-black relative z-2">Thank you</h1>
+            <div class="float-left md:ml-88 mt-25px">
+                <p class="lg:w-90% lg:pl-8 relative z-2">We will answer your message shortly.</p>
+                <a class="mt-30px button-medium inline-block text-black float-right mr-10px relative z-2" href="/"> <img class="inline mr-17px" alt="right arrow" src="/images/arrow right.svg"><h4 class="inline relative top-2px">Back home</h4></a>
+            </div>
+        </div>
+        <div class="js-show-left absolute mt-8 sm:mt-90px">
+<div class="rounded-tr-50% w-119px h-135px md:w-180px md:h-203px lg:w-264px lg:h-300px bg-tc-yellow absolute bottom-0">
+
+            </div>
+
+            <div class="rounded-br-50px md:rounded-br-80px lg:rounded-br-200px w-187px h-94px md:w-280px md:h-141px lg:w-412px lg:h-208px bg-tc-orange">
+
+            </div>
+        </div>
+    </section>
+
+    </section>
+        <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
+            {{ partial "subscribe.html" . }}
+        </div>
+    </section>
+    {{ partial "footer.html" . }}
+</section>
+<script>
+    const callback = function (entries) {
+        entries.forEach((entry) => {
+            console.log(entry);
+
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("opacity-0");
+                entry.target.classList.add("animate-slideInFromRight");
+                entry.target.classList.add("opacity-1");
+
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback);
+
+    const targets = document.querySelectorAll(".js-show-right");
+    targets.forEach(function (target) {
+        target.classList.add("opacity-0");
+        observer.observe(target);
+    });
+
+
+    const callback2 = function (entries2) {
+        entries2.forEach((entry2) => {
+            console.log(entry2);
+
+            if (entry2.isIntersecting) {
+                entry2.target.classList.remove("opacity-0");
+                entry2.target.classList.add("animate-slideInFromLeft");
+                entry2.target.classList.add("opacity-1");
+
+            }
+        });
+    };
+
+    const observer2 = new IntersectionObserver(callback2);
+
+    const targets2 = document.querySelectorAll(".js-show-left");
+    targets2.forEach(function (target2) {
+        target2.classList.add("opacity-0");
+        observer2.observe(target2);
+    });
+
+</script>
+</body>
+</html>
