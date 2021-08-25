@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   enable-background="new 0 0 1011.4 322"
+   viewBox="0 0 413.79998 88"
+   version="1.1"
+   id="svg50"
+   sodipodi:docname="Felcana Logo.svg"
+   width="172"
+   height="139"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata56">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs54" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview52"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.7469907"
+     inkscape:cx="338.9"
+     inkscape:cy="44.1"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg50"
+     inkscape:document-rotation="0"
+     units="px" />
+  <g
+     fill="#373d42"
+     id="g48"
+     transform="matrix(0.86976734,0,0,0.86976734,-113.40347,-100.29857)">
+    <path
+       d="m 338.3,189.8 c -9.1,0 -17.1,-8.4 -17.1,-18.5 0,-11.3 8.2,-18.9 17.3,-18.9 7.8,0 13,5.3 14.7,9.6 l 15.8,-6.6 c -5.3,-12.1 -17.3,-18.1 -30.5,-18.1 -19.9,0 -34.1,14.7 -34.1,33.9 0,18.7 14.5,33.7 33.9,33.7 15.6,0 28.1,-9.6 31.2,-23.3 h -17.7 c -1.4,4.4 -7.4,8.2 -13.5,8.2 z"
+       id="path34" />
+    <path
+       d="m 423.4,146.3 c -4.5,-5.4 -12.3,-8.9 -19.9,-8.9 -18.2,0 -31.5,14.5 -31.5,33.7 0,19 12.7,33.6 31.5,33.6 7.7,0 15.5,-3.5 19.9,-9 v 7.6 h 16.5 v -64.4 h -16.5 z m -17.6,43.1 c -9.1,0 -16.9,-7.9 -16.9,-18.2 0,-10.5 7.7,-18.5 16.9,-18.5 9.1,0 17.6,7 17.6,18.5 0,11.3 -8.4,18.2 -17.6,18.2 z"
+       id="path36" />
+    <path
+       d="m 243.2,137.4 c -18.2,0 -32.9,15.2 -32.9,33.8 0,18.6 14.7,33.5 32.9,33.5 15.9,0 27.3,-8.9 31,-21.9 h -17.5 c -2.7,5.1 -8.2,7.5 -13.6,7.5 -5.6,0 -10.5,-2.5 -13.7,-6.9 l 45.4,-19.1 c -3.2,-17.2 -16.2,-26.9 -31.6,-26.9 z m -17.6,32.9 c 0.4,-11 8,-18.5 17.5,-18.5 5.2,0 9.7,2.1 12.7,5.8 z"
+       id="path38" />
+    <path
+       d="m 183.3,132.3 h 37.9 v -15.4 h -54.4 v 87 h 16.5 v -35.5 h 19 l 5.8,-15.4 h -24.8 z"
+       id="path40" />
+    <path
+       d="m 281.2,123.8 v 80.1 h 16.5 v -87 h -0.1 z"
+       id="path42" />
+    <path
+       d="m 564.1,146.3 c -4.5,-5.4 -12.3,-8.9 -19.9,-8.9 -18.2,0 -31.5,14.5 -31.5,33.7 0,19 12.7,33.6 31.5,33.6 7.7,0 15.5,-3.5 19.9,-9 v 7.6 h 16.5 v -64.4 h -16.5 z m -17.6,43.1 c -9.1,0 -16.9,-7.9 -16.9,-18.2 0,-10.5 7.7,-18.5 16.9,-18.5 9.1,0 17.6,7 17.6,18.5 0,11.3 -8.4,18.2 -17.6,18.2 z"
+       id="path44" />
+    <path
+       d="m 483.1,137.4 c -6.8,0 -14.6,3.4 -18.9,8.9 v -7.5 h -16.6 v 64.4 h 16.6 v -33.7 c -0.2,-12.3 7.6,-16.9 13.7,-16.9 8.2,0 12.5,5.3 12.5,14.3 v 36.3 H 507 v -38.7 c 0,-16.9 -8.2,-27.1 -23.9,-27.1 z"
+       id="path46" />
+  </g>
+</svg>

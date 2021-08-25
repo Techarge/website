@@ -1,49 +1,59 @@
-<nav class="flex items-center justify-between flex-wrap bg-tc-yellow p-6">
-	<div class="flex items-center flex-shrink-0 text-white mr-6">
-		<img alt="Techarge logo" src='Techarge-logo.svg'/>
-	</div>
-	<div class="hidden md:block">
-		<div class="text-sm md:flex-grow">
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-				Home
-			</a>
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-				About
-			</a>
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-				Services
-			</a>
-			<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-				Blog
-			</a>
-		</div>
-	</div>
+<section class="bg-tc-green -mb-5px">
+    <nav class="flex items-center container justify-between flex-wrap bg-tc-green pt-25px md:pt-60px lg:pt-115px pb-0">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
 
-	<div class="block md:hidden">
-		<div x-data="{open:false}">
-			<button @click="open=true" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-			</button>
-			<div class="w-full block flex-grow md:flex md:items-center md:w-auto" x-show="open" @click.away="open=false">
-				<div class="text-sm md:flex-grow">
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-						Home
-					</a>
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
-						About
-					</a>
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-						Services
-					</a>
-					<a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
-						Blog
-					</a>
-				</div>
-				<div>
-					<a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 md:mt-0">Download</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</nav>
+            <a href="/"><img class="w-98px md:w-200px" alt="Techarge logo" src="/images/Logo.svg"></a>
+        </div>
+        <div class="hidden md:block z-10 md:mr-12 lg:mr-130px">
+            <div class="text-sm md:flex-grow">
+                <a href="/"
+                   class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+                    <p>Home</p>
+                </a>
+                <a href="/about"
+                   class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+                    <p>About</p>
+                </a>
+                <a href="/about/#team" class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+                    <p>Team</p>
+                </a>
+            </div>
+        </div>
 
+        <div class="block md:hidden fixed flex right-40px top-30px z-20">
+            <div x-data="{open:false}">
+                <button @click="open=true"
+                        class="flex items-center p-15px h-60px w-60px bg-tc-yellow text-tc-icons focus:outline-none">
+                    <svg class="fill-current text-tc-icons m-auto" x-show="open" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 24L24.2918 1.70816" stroke="#7A7A7A" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M2 2L24.2918 24.2918" stroke="#7A7A7A" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+
+                    <svg x-show="!open" class=" fill-current text-tc-icons m-auto" viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                    </svg>
+                </button>
+                <div class="mt-10px pl-60px py-50px w-full text-22px text-tc-light-black bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0"
+                     x-show="open"
+                     @click.away="open=false">
+                    <div class=" md:flex-grow">
+                        <a href="/"
+                           class="block mb-20px md:inline-block md:mt-0 mr-4">
+                            Home
+                        </a>
+                        <a href="/about"
+                           class="block mb-20px md:inline-block md:mt-0 mr-4">
+                            About
+                        </a>
+                        <a href="/about/#team"
+                           class="block mt-4 md:inline-block md:mt-0 ">
+                            Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
