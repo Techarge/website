@@ -1,7 +1,274 @@
 {{ define "main" }}
-<main class="container mx-auto px-4 py-24 bg-gray-100">
-    <h1>Welcome to Hugo with Tailwind CSS</h1>
-    <div class="text-gray-500">This is an example site with Tailwind CSS 2</div>
+<main>
+    <div class="hidden md:flex js-show-right absolute md:-right-10px lg:-right-180px top-214px">
+        <div class="rounded-tl-130px lg:rounded-tl-50% w-210px h-239px lg:w-424px lg:h-481px bg-tc-grey absolute right-0 bottom-0">
+
+        </div>
+        <div class="rounded-bl-80px lg:rounded-bl-200px w-329px h-166px lg:w-662px lg:h-335px bg-tc-dark-green">
+
+        </div>
+    </div>
+    <section class=" bg-tc-green pt-50px pb-100px sm:pb-65px md:pt-125px md:pb-75px lg:pt-185px lg:pb-120px overflow-hidden">
+
+        <div class="container">
+            <h1 class="text-tc-light-black">Big Data</h1>
+            <h1 class="text-tc-light-black ml-12vw">Clarity</h1>
+            <div class="float-left md:ml-88 mt-25px">
+                <p class="lg:w-90% lg:pl-8">We help complex industries fix core problems through technology
+                    Techarge is a software consultancy providing on-demand CTO expertise and development services.
+                    We help VC-backed start-ups and enterprise companies define and develop new software platforms and
+                    web
+                    applications.</p>
+                <a class="mt-30px button-medium inline-block text-tc-orange float-right mr-10px" href="/contact">Contact
+                    us</a>
+            </div>
+        </div>
+        <div class="js-show-left absolute -left-50px -left-100px lg:-left-230px lx:-left-180px top-65vh xs:top-55vh mt-8 sm:top-362px md:top-580px lg:top-550px sm:mt-90px">
+
+            <div class="rounded-tr-80px md:rounded-tr-100px lg:rounded-tr-200px w-238px h-120px md:w-398px md:h-200px lg:w-662px lg:h-335px bg-tc-orange">
+
+            </div>
+            <div class="rounded-br-50% w-152px h-173px md:w-255px md:h-289px lg:w-424px lg:h-481px bg-tc-yellow absolute left-0 top-0">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white pt-150px sm:pt-80px pb-25px md:pt-60px md:pb-56px lg:pt-100px lg:pb-44px">
+        <div class="container gap-10px md:gap-x-85px lg:gap-x-97px grid grid-cols-1 md:grid-cols-2">
+            <div class="hidden md:block order-2 md:order-2 relative mt-65px h-355px lg:ml-75px ml-0px right-75px md:right-0">
+                <div class="bg-tc-grey rounded-7px lg:rounded-20px h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-10px rounded-20px flex relative z-10 top-30px left-24 lg:left-28 xl:left-60">
+                    <img alt="light bulb icon" src="/images/light bulb.svg">
+                </div>
+                <div class="static bg-tc-green rounded-20px h-72px w-72px md:h-130px md:w-130px lg:w-158px lg:h-158px p-10px md:p-15px lg:p-25px flex justify-center relative float-right">
+                    <img alt="lamp icon" src="/images/Lamp.svg">
+                    <img class="mx-auto hidden active" src="/images/NewLamp.gif">
+                </div>
+                <div class="bg-tc-grey rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px md:p-25px lg:p-32px flex justify-center relative md:top-16 lg:top-20">
+                    <img alt="data icon" src="/images/data.svg">
+                </div>
+            </div>
+            <div class="md:order-2 col-span-2 md:col-span-1 lg:w-415px">
+                <h2 class="mb-15px md:mb-30px">About Techarge</h2>
+                <p>With over 25 years experience in financial services, healthcare and clean energy, our expert team
+                    offers end-to-end technology consultancy and development services.
+                    We love making sense of multi-threaded challenges and helping our clients tackle complex problems
+                    with original ideas and innovative thinking.</p>
+                <a class="mt-15px button-small inline-block text-tc-orange float-right" href="/about">Find out more
+                    about us</a>
+            </div>
+            <div class="md:flex md:order-3 col-span-2 mt-30px md:mt-80px">
+                <aside class="relative md:top-20px flex justify-around md:inline-block mb-90px md:mb-0 md:pl-45px pt-45px-ml-20px -mr-20px md:mr-95px lg:mr-128px">
+                    <div class="mr-20px">
+                        <h4 class="whitespace-nowrap md:top-40px md:-ml-40px md:whitespace-nowrap md:origin-center md:transform md:-rotate-90 md:absolute md:left-0">
+                            A member of</h4>
+                        <img class="nominet w-116px h-110px" alt="nominet logo" src="/images/nominet.svg">
+                    </div>
+
+                    <div class="block w-60 md:hidden">
+
+                        <div class="bg-tc-grey left-25% h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-10px rounded-7px flex relative z-10">
+                            <img alt="light bulb icon" src="/images/light bulb.svg">
+                        </div>
+                        <div class="bg-tc-green top-10px rounded-20px h-72px w-72px md:h-130px md:w-130px lg:w-158px lg:h-158px p-10px md:p-15px lg:p-25px flex justify-center relative float-right">
+                            <img alt="lamp icon" src="/images/Lamp.svg">
+                        </div>
+                        <div class="bg-tc-grey rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px md:p-25px lg:p-32px flex justify-center relative top-12">
+                            <img alt="data icon" src="/images/data.svg">
+                        </div>
+                    </div>
+
+                </aside>
+                <div class="relative grid grid-cols-1 md:flex items-end w-full">
+                    <h4 class="md:top-60px md:-ml-40px md:whitespace-nowrap md:origin-center md:transform md:-rotate-90 md:absolute md:top-0 md:-left-20px">
+                        Happy clients</h4>
+                    <div class="md:relative md:top-3 inline-grid grid-cols-4 gap-18px md:gap-33px lg:gap-46px ml-10px md:ml-20px lg:ml-27px w-full">
+                        <img class="" alt="Crown Commercial Serive Supplier logo" src="/images/CCS.svg">
+                        <img class="" alt="EMSX logo" src="/images/emsx-logo.svg">
+                        <img class="" alt="Felcana logo" src="/images/Felcana Logo.svg">
+                        <img class="" alt="Sayso Medical logo" src="/images/Sayso Logo.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-tc-green pb-110px pt-35px md:pt-60px md:pb-75px lg:py-52px">
+        <div class="container lg:px-110px">
+            <h1 class="pb-10px md:pb-40px lg:pb-20px">Our services</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-75px md:gap-20px gap-25px">
+                <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                    <div class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto">
+                        <img class="w-full sm:w-180px md:w-210px" alt="Techarge logo" src="/images/site.svg">
+                    </div>
+                    <h4 class="text-center">Software & Web Application Development</h4>
+                    <p>Our team consists of UI experts, UX designers and full-stack developers. Drawing on their
+                        expertise, we deliver a full range of development services across multiple frameworks and
+                        languages.</p>
+
+                </div>
+                <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                    <div class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto">
+                        <img class="w-full sm:w-180px md:w-210px" alt="Techarge logo" src="/images/pingpong.svg">
+                    </div>
+                    <h4 class="text-center">Technology Consultancy</h4>
+                    <p>Our consultants have worked at a CTO-level across multiple industries, managing the full
+                        software-development lifecycle. Acting as a strategic advisor, we can help select the right
+                        technologies and drive forward digital change.</p>
+
+                </div>
+                <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center h-fit-c">
+                    <div class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto">
+                        <img class="w-full sm:w-180px md:w-210px" alt="Techarge logo" src="/images/globe.svg">
+                    </div>
+                    <h4>Data Integration and Visualisation</h4>
+                    <p>We help companies unlock the power of their data by identifying, collecting and analysing key
+                        data points from multiple sources. Leveraging powerful BI tools, we interpret and visualise
+                        complex data streams, turning them into clear dashboards with actionable insights</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="animate-fadeInFromBottom container grid grid-cols-4 md:grid-cols-8 items-center gap-x-21px sm:26px md:41px
+                    py-31px md:py-37px">
+            <img class="" alt="Django logo" src="/images/django-logo.svg">
+            <img class="" alt="Terraform logo" src="/images/terraform-black 1.svg">
+            <img class="" alt="Python logo" src="/images/Python-logo 1.svg">
+            <img class="" alt="PostgresSQL logo" src="/images/PostgreSQL_logo.1color_blue 1.svg">
+            <img class="" alt="React logo" src="/images/React-logo.svg">
+            <img class="" alt="Svelte logo" src="/images/svelte-logo-horizontal_BLK 1.svg">
+            <img class="" alt="Salt Stack logo" src="/images/Salt-Stack-logo.svg">
+            <img class="" alt="Wagtail logo" src="/images/wagtail-logo.svg">
+
+        </div>
+    </section>
+    <section
+            class="bg-tc-grey pt-52px pb-95px md:pt-70px md:pb-65px lg:pt-155px lg:pb-230px lg:pl-105px lg:pr-440px md:pr-70px pl-0px pr-0px">
+        <div class="container">
+            <h2 class="hidden sm:block">Agile, innovative and iterative.</h2>
+            <h2 class="hidden sm:block mb-50px">This is how we deliver.</h2>
+            <h3>1 - Introduction Call</h3>
+            <div class="flex items-center static">
+                <img class="w-148px" alt="mobile icon" src="/images/mobile-1.svg">
+                <img class="w-148px hidden" alt="mobile icon" src="/images/mobile 2.svg">
+                <p>All good things start with a conversation. An introductory call helps us mutually decide if we are a
+                    good
+                    fit and align on high-level objectives. It's also your chance to ask us any questions.</p>
+            </div>
+            <h3 class="mt-20px">2 - Discovery Session</h3>
+            <div class="flex items-center">
+                <img class="w-148px" alt="pencil icon" src="/images/pencil 2.svg">
+                <p>This is where we really dig into your business challenges, users, priorities and goals to define what
+                    success looks like, timelines and deliverables. We spend a lot of time listening here.</p>
+            </div>
+            <h3 class="mt-20px">3 - Design Sprint</h3>
+            <div class="flex items-center">
+                <img class="w-148px" alt="cooking icon" src="/images/cooking.svg">
+                <p>Working with our UX and UI partners, we conduct thorough user research and prototyping exercises to
+                    ensure our solution is viable, scalable and ultimately adding value. This gives us confidence that
+                    we are building the right solution.</p>
+            </div>
+            <h3 class="mt-20px">4 - Development Sprint</h3>
+            <div class="flex items-center">
+                <img class="w-148px" alt="work icon" src="/images/work.svg">
+                <p>Taking our clearly defined scope and validated concepts, we follow agile delivery processes to
+                    translate wireframes and process flows into fully functioning applications. We thoroughly test our
+                    code on every release</p>
+            </div>
+            <h3 class="mt-20px">5 - Support & Maintenance</h3>
+            <div class="flex items-center">
+                <img class="w-148px" alt="chip icon" src="/images/chip.svg">
+                <p>All software continues to evolve after launch. We work with clients on an ongoing basis to
+                    iteratively define, design and build new features and functionalities, alongside offering
+                    on-going maintenance and support packages.</p>
+            </div>
+            <h3 class="mt-20px">6 - Handover & Training</h3>
+            <div class="flex items-center">
+                <img class="w-148px" alt="confirmed icon" src="/images/confirmed.svg">
+                <p>We are able to support the platform's transition to an internal team, conducting a comprehensive
+                    handover process to ensure complete continuity. We can also provide on-going training and
+                    mentoring for your development team.</p>
+            </div>
+
+        </div>
+        <div class="hidden md:flex js-show-right absolute md:right-0 md:-mt-360 lg:-mt-120 md:mr-20 lg:mr-20px">
+
+            <div class="bg-tc-yellow md:left-48 md:bottom-8 lg:left-60 lg:bottom-12 h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-20px rounded-7px flex relative z-10">
+                <img alt="map icon" src="/images/map.svg">
+            </div>
+            <div class="bg-tc-green top-40px rounded-20px h-72px w-72px md:h-130px md:w-130px lg:w-158px lg:h-158px p-10px md:p-15px lg:p-20px flex justify-center relative float-right">
+                <img alt="dna icon" src="/images/DNA.svg">
+            </div>
+            <div class="hidden lg:flex top-112 bg-tc-orange rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px md:p-25px lg:p-32px flex justify-center relative top-12">
+                <img alt="bell icon" src="/images/bell.svg">
+            </div>
+        </div>
+        <div class="hidden lg:flex js-show-left absolute mt-120 left-0">
+            <div class="rounded-br-200px w-238px h-120px md:w-398px md:h-200px lg:w-662px lg:h-335px bg-tc-orange absolute bottom-0">
+            </div>
+            <div class="rounded-tr-80px md:rounded-tr-100px lg:rounded-tr-200px  w-152px h-173px md:w-255px md:h-289px lg:w-424px lg:h-481px bg-tc-yellow absolute bottom-0">
+            </div>
+        </div>
+        <div class="flex js-show-right absolute lg:-right-200px -right-10px top-0px sm:top-4390px md:top-4390px lg:top-3000px xl:top-2650px mt-14 sm:mt-160px md:mt-70px xl:mt-48">
+            <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-60% w-146px h-166px md:w-210px md:h-238px lg:w-437px lg:h-496px bg-tc-green absolute right-0 bottom-0">
+
+            </div>
+            <div class="rounded-bl-50px md:rounded-bl-80px lg:rounded-bl-200px w-229px h-115px md:w-329px md:h-166px lg:w-683px lg:h-345px bg-tc-yellow">
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
+            {{ partial "subscribe.html" . }}
+        </div>
+    </section>
+<script>
+    const callback = function (entries) {
+  entries.forEach((entry) => {
+    console.log(entry);
+
+    if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0");
+      entry.target.classList.add("animate-slideInFromRight");
+      entry.target.classList.add("opacity-1");
+
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".js-show-right");
+targets.forEach(function (target) {
+  target.classList.add("opacity-0");
+  observer.observe(target);
+});
+
+
+    const callback2 = function (entries2) {
+  entries2.forEach((entry2) => {
+    console.log(entry2);
+
+    if (entry2.isIntersecting) {
+        entry2.target.classList.remove("opacity-0");
+      entry2.target.classList.add("animate-slideInFromLeft");
+      entry2.target.classList.add("opacity-1");
+
+    }
+  });
+};
+
+const observer2 = new IntersectionObserver(callback2);
+
+const targets2 = document.querySelectorAll(".js-show-left");
+targets2.forEach(function (target2) {
+  target2.classList.add("opacity-0");
+  observer2.observe(target2);
+});
+
+</script>
 </main>
 {{ end }}
 

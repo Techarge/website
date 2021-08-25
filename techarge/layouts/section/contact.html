@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
+    {{ partialCached "jslibs/turbolinks/script-src.html" "-" }}
+
+    {{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "header/site-nav.html" . }}
+<h1 class="text-center">Contact</h1>
+
+<section class="bg-white">
+    <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
+        {{ partial "subscribe.html" . }}
+    </div>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>
