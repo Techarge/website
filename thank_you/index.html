@@ -1,0 +1,110 @@
+<!doctype html><html lang=en>
+<head>
+<script type=module src=/jslibs/alpinejs/alpine.min.b22d8b923a3ea4c6c4018b940e8d09241267ad99491c5004ec951eb2a7984591.js integrity="sha256-si2Lkjo+pMbEAYuUDo0JJBJnrZlJHFAE7JUesqeYRZE="></script>
+<script nomodule src=/jslibs/alpinejs/alpine-ie11.min.d76a374c2679de50126e803be55d20b0b55b18982eedba4f62e242bac7c71b2e.js integrity="sha256-12o3TCZ53lASboA75V0gsLVbGJgu7bpPYuJCusfHGy4=" defer></script>
+<script src=/jslibs/turbolinks/turbolinks.min.7ce82fbbd878e569e81a1fb6f32bb54396bc915126ea185f2a5c924281364d98.js integrity="sha256-fOgvu9h45WnoGh+28yu1Q5a8kVEm6hhfKlySQoE2TZg=" crossorigin=anonymous defer></script>
+<meta http-equiv=content-type content="text/html" charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel=stylesheet>
+<link rel=stylesheet href=/css/main.min.1e69757d0f36699a9e7e9cc25ef2c80854383503b2e30edcf291cd766186357f.css integrity=sha256-Hml1fQ82aZqefpzCXvLICFQ4NQOy4w7c8pHNdmGGNX8=>
+</head>
+<body>
+<section class="relative overflow-x-hidden">
+<a href=/contact><div class="hidden md:block rounded-bl-20px fixed -right-100px top-55vh bg-tc-orange w-fit-c transform rotate-90 py-20px px-55px z-20">
+<svg class="inline-block transform -rotate-90" xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28" fill="none"><path d="M21.5349 26.0481V.964744C21.5349.43112 21.1069-.187078e-7 20.5772-.418636e-7L1.42264-.879135e-6C.892897-.902291e-6.464912.431119.464912.964743L.464911 26.0481C.464911 26.5817.892895 27.0128 1.42264 27.0128H20.5772C21.1069 27.0128 21.5349 26.5817 21.5349 26.0481zm-3.3161-1.206H2.6198V2.17067h15.599l.6435-.83209 1.5114 1.18483L19.377 3.81375V23.2021L20.3737 24.4924l-1.5114 1.1849-.6435-.8352zm1.1612-1.64-7.4822-9.6957L19.38 3.81074 20.3767 2.52039 18.8652 1.33557l-.6434.83209L10.2726 12.4663C10.0442 12.7625 9.92022 13.1268 9.92022 13.5019c0 .375.12398.739400000000002.35238 1.0356l7.9462 10.3046L18.8623 25.6742l1.5114-1.1848L19.38 23.2021z" fill="#3a3a3a"/></svg><p class="text-30px font-bold font-josefin text-tc-light-black relative top-5px ml-16px inline-block">Contact</p>
+</div></a>
+<section class="bg-tc-green -mb-5px">
+<nav class="flex items-center container justify-between flex-wrap bg-tc-green pt-25px md:pt-60px lg:pt-115px pb-0">
+<div class="flex items-center flex-shrink-0 text-white mr-6">
+<a href=/><img class="w-98px md:w-200px" alt="Techarge logo" src=/images/Logo.svg></a>
+</div>
+<div class="hidden md:block z-10 md:mr-12 lg:mr-130px">
+<div class="text-sm md:flex-grow">
+<a href=/ class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+<p>Home</p>
+</a>
+<a href=/about class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+<p>About</p>
+</a>
+<a href=/about/#team class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+<p>Team</p>
+</a>
+</div>
+</div>
+<div class="block md:hidden fixed flex right-40px top-30px z-20">
+<div x-data={open:false}>
+<button @click="open=true" class="flex items-center p-15px h-60px w-60px bg-tc-yellow text-tc-icons focus:outline-none"><svg class="fill-current text-tc-icons m-auto" x-show="open" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 24 24.2918 1.70816" stroke="#7a7a7a" stroke-width="3" stroke-linecap="round"/><path d="M2 2 24.2918 24.2918" stroke="#7a7a7a" stroke-width="3" stroke-linecap="round"/></svg><svg x-show="!open" class="fill-current text-tc-icons m-auto" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+</button>
+<div class="mt-10px pl-60px py-50px w-full text-22px text-tc-light-black bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0" x-show=open @click.away="open=false">
+<div class=md:flex-grow>
+<a href=/ class="block mb-20px md:inline-block md:mt-0 mr-4">
+Home
+</a>
+<a href=/about class="block mb-20px md:inline-block md:mt-0 mr-4">
+About
+</a>
+<a href=/about/#team class="block mt-4 md:inline-block md:mt-0">
+Team
+</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</section>
+<div class="hidden md:flex js-show-right absolute md:-right-10px lg:-right-180px top-214px">
+<div class="rounded-bl-130px lg:rounded-bl-50% w-290px h-330px lg:w-434px lg:h-493px bg-tc-grey absolute right-0">
+</div>
+<div class="rounded-tl-80px lg:rounded-tl-150px w-454px h-230px lg:w-678px lg:h-343px bg-tc-dark-green">
+</div>
+</div>
+<section class="bg-tc-green pt-50px pb-100px sm:pb-65px md:pt-125px md:pb-75px lg:pt-185px lg:pb-120px overflow-hidden">
+<div class=container>
+<h1 class="text-tc-light-black relative z-2">Thank you</h1>
+<div class="float-left md:ml-88 mt-25px">
+<p class="lg:w-90% lg:pl-8 relative z-2">We will answer your message shortly.</p>
+<a class="mt-30px button-medium inline-block text-black float-right mr-10px relative z-2" href=/> <img class="inline mr-17px" alt="right arrow" src="/images/arrow right.svg"><h4 class="inline relative top-2px">Back home</h4></a>
+</div>
+</div>
+<div class="js-show-left absolute mt-8 sm:mt-90px">
+<div class="rounded-tr-50% w-119px h-135px md:w-180px md:h-203px lg:w-264px lg:h-300px bg-tc-yellow absolute bottom-0">
+</div>
+<div class="rounded-br-50px md:rounded-br-80px lg:rounded-br-200px w-187px h-94px md:w-280px md:h-141px lg:w-412px lg:h-208px bg-tc-orange">
+</div>
+</div>
+</section>
+</section>
+<div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
+<h3 class=flex>Subscribe to the latest tech trends</h3>
+<input class="border-b border-tc-orange text-orange outline-none w-full h-26px placeholder-tc-orange" placeholder="your email">
+</div>
+</section>
+<footer class="bg-tc-grey pt-75px pb-70px">
+<div class="container grid grid-cols-1 md:grid-cols-2">
+<div class=text-tc-dark-grey>
+<h3 class=mb-28px>Techarge Limited</h3>
+<p class=text-11px>Labs Triangle, Stables Market, Camden, London, NW1 8AB<br>
++44 789 495 9346<br>
+<a href=mailto:info@techarge.co.uk>info@techarge.co.uk</a><br>
+Copyright © Techarge. All Rights Reserved.</p>
+</div>
+<div class="text-light-black flex-col items-end justify-around hidden md:flex">
+<a href=/>
+<p class=text-18px>Home</p>
+</a>
+<a href=/about class=mt-30px>
+<p class=text-18px> About</p>
+</a>
+<a href=/contact class=mt-30px>
+<p class=text-18px>Contact</p>
+</a>
+</div>
+</div>
+</footer>
+</section>
+<script>const callback=function(a){a.forEach(a=>{console.log(a),a.isIntersecting&&(a.target.classList.remove("opacity-0"),a.target.classList.add("animate-slideInFromRight"),a.target.classList.add("opacity-1"))})},observer=new IntersectionObserver(callback),targets=document.querySelectorAll(".js-show-right");targets.forEach(function(a){a.classList.add("opacity-0"),observer.observe(a)});const callback2=function(a){a.forEach(a=>{console.log(a),a.isIntersecting&&(a.target.classList.remove("opacity-0"),a.target.classList.add("animate-slideInFromLeft"),a.target.classList.add("opacity-1"))})},observer2=new IntersectionObserver(callback2),targets2=document.querySelectorAll(".js-show-left");targets2.forEach(function(a){a.classList.add("opacity-0"),observer2.observe(a)})</script>
+</body>
+</html>

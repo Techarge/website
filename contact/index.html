@@ -1,0 +1,84 @@
+<!doctype html><html lang=en>
+<head>
+<script type=module src=/jslibs/alpinejs/alpine.min.b22d8b923a3ea4c6c4018b940e8d09241267ad99491c5004ec951eb2a7984591.js integrity="sha256-si2Lkjo+pMbEAYuUDo0JJBJnrZlJHFAE7JUesqeYRZE="></script>
+<script nomodule src=/jslibs/alpinejs/alpine-ie11.min.d76a374c2679de50126e803be55d20b0b55b18982eedba4f62e242bac7c71b2e.js integrity="sha256-12o3TCZ53lASboA75V0gsLVbGJgu7bpPYuJCusfHGy4=" defer></script>
+<script src=/jslibs/turbolinks/turbolinks.min.7ce82fbbd878e569e81a1fb6f32bb54396bc915126ea185f2a5c924281364d98.js integrity="sha256-fOgvu9h45WnoGh+28yu1Q5a8kVEm6hhfKlySQoE2TZg=" crossorigin=anonymous defer></script>
+<meta http-equiv=content-type content="text/html" charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel=stylesheet>
+<link rel=stylesheet href=/css/main.min.1e69757d0f36699a9e7e9cc25ef2c80854383503b2e30edcf291cd766186357f.css integrity=sha256-Hml1fQ82aZqefpzCXvLICFQ4NQOy4w7c8pHNdmGGNX8=>
+</head>
+<body>
+<section class="bg-tc-green -mb-5px">
+<nav class="flex items-center container justify-between flex-wrap bg-tc-green pt-25px md:pt-60px lg:pt-115px pb-0">
+<div class="flex items-center flex-shrink-0 text-white mr-6">
+<a href=/><img class="w-98px md:w-200px" alt="Techarge logo" src=/images/Logo.svg></a>
+</div>
+<div class="hidden md:block z-10 md:mr-12 lg:mr-130px">
+<div class="text-sm md:flex-grow">
+<a href=/ class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+<p>Home</p>
+</a>
+<a href=/about class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+<p>About</p>
+</a>
+<a href=/about/#team class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+<p>Team</p>
+</a>
+</div>
+</div>
+<div class="block md:hidden fixed flex right-40px top-30px z-20">
+<div x-data={open:false}>
+<button @click="open=true" class="flex items-center p-15px h-60px w-60px bg-tc-yellow text-tc-icons focus:outline-none"><svg class="fill-current text-tc-icons m-auto" x-show="open" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 24 24.2918 1.70816" stroke="#7a7a7a" stroke-width="3" stroke-linecap="round"/><path d="M2 2 24.2918 24.2918" stroke="#7a7a7a" stroke-width="3" stroke-linecap="round"/></svg><svg x-show="!open" class="fill-current text-tc-icons m-auto" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+</button>
+<div class="mt-10px pl-60px py-50px w-full text-22px text-tc-light-black bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0" x-show=open @click.away="open=false">
+<div class=md:flex-grow>
+<a href=/ class="block mb-20px md:inline-block md:mt-0 mr-4">
+Home
+</a>
+<a href=/about class="block mb-20px md:inline-block md:mt-0 mr-4">
+About
+</a>
+<a href=/about/#team class="block mt-4 md:inline-block md:mt-0">
+Team
+</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</section>
+<h1 class=text-center>Contact</h1>
+<section class=bg-white>
+<div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
+<h3 class=flex>Subscribe to the latest tech trends</h3>
+<input class="border-b border-tc-orange text-orange outline-none w-full h-26px placeholder-tc-orange" placeholder="your email">
+</div>
+</section>
+<footer class="bg-tc-grey pt-75px pb-70px">
+<div class="container grid grid-cols-1 md:grid-cols-2">
+<div class=text-tc-dark-grey>
+<h3 class=mb-28px>Techarge Limited</h3>
+<p class=text-11px>Labs Triangle, Stables Market, Camden, London, NW1 8AB<br>
++44 789 495 9346<br>
+<a href=mailto:info@techarge.co.uk>info@techarge.co.uk</a><br>
+Copyright © Techarge. All Rights Reserved.</p>
+</div>
+<div class="text-light-black flex-col items-end justify-around hidden md:flex">
+<a href=/>
+<p class=text-18px>Home</p>
+</a>
+<a href=/about class=mt-30px>
+<p class=text-18px> About</p>
+</a>
+<a href=/contact class=mt-30px>
+<p class=text-18px>Contact</p>
+</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
