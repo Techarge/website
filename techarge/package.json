@@ -31,6 +31,7 @@
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^2.1.2",
     "netlify-plugin-checklinks": "^4.1.1",
-    "netlify-plugin-chromium": "^1.1.4"
+    "netlify-plugin-chromium": "^1.1.4",
+    "netlify-plugin-image-optim": "^0.4.0"
   }
 }

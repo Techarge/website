@@ -1,6 +1,6 @@
 # Use netlify to build the site
 [build]
-  command = "hugo --minify"
+  command = "NODE_ENV=production hugo --minify"
   base = "techarge/"
   publish = "public"
 
@@ -10,6 +10,9 @@
 
 [[plugins]]
 package = "netlify-plugin-chromium"
+
+[[plugins]]
+package = "netlify-plugin-image-optim"
 
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
