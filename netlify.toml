@@ -19,11 +19,12 @@ package = "@netlify/plugin-lighthouse"
     performance = 0.6
     accessibility = 0.8
     best-practices = 0.2
+    pwa = 0.2
 #    performance = 0.9
 #    accessibility = 0.9
 #    best-practices = 0.9
     seo = 0.9
-    pwa = 0.9
+    #pwa = 0.9
 
   # optional, deploy the lighthouse report to a path under your site
   [plugins.inputs]
