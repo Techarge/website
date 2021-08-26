@@ -1,6 +1,7 @@
 # Use netlify to build the site
 [build]
-  command = "hugo"
+  command = "hugo --minify"
+  base = "techarge/"
   publish = "public"
 
 [build.environment]
