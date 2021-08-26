@@ -5,7 +5,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.87"
+  HUGO_VERSION = "0.87.0"
 
 
 [[plugins]]
