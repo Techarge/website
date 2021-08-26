@@ -14,3 +14,6 @@ title = "Techarge Site"
 		ignoreImports = false
 		path = "github.com/gohugoio/hugo-mod-jslibs/turbolinks"
 
+    [[module.mounts]]
+		source = "netlify.toml"
+ 		target = "netlify.toml"
