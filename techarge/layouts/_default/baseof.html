@@ -4,14 +4,14 @@
     {{ partial "head.html" . }}
 
 	<!-- turbolinks: https://github.com/gohugoio/hugo-mod-jslibs/tree/master/turbolinks -->
-	{{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
-	{{ partialCached "jslibs/turbolinks/script-src.html" "-" }}
+<!--	{{ partialCached "jslibs/alpinejs/script-src.html" "-" }}-->
+<!--	{{ partialCached "jslibs/turbolinks/script-src.html" "-" }}-->
 </head>
 <body>
 
 <section class="relative overflow-x-hidden">
 	{{ partial "contact.html" . }}
-{{ partial "header/site-nav.html" . }}
+	{{ partial "header/site-nav.html" . }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer.html" . }}
 </section>
