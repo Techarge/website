@@ -29,6 +29,8 @@
     "tailwindcss": "^2.2.2"
   },
   "devDependencies": {
-    "netlify-plugin-lighthouse": "^0.1.2"
+    "netlify-plugin-checklinks": "^4.1.1",
+    "netlify-plugin-chromium": "^1.1.4",
+    "@netlify/plugin-lighthouse": "^0.1.2"
   }
 }
