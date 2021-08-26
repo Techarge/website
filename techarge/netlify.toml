@@ -1,4 +1,16 @@
 [[plugins]]
+package = "netlify-plugin-chromium"
+
+[[plugins]]
+package = "netlify-plugin-lighthouse"
+
+[[plugins]]
+package = "netlify-build-plugin-debugbear"
+
+[[plugins]]
+package = "netlify-plugin-pagewatch"
+
+[[plugins]]
 package = "netlify-plugin-checklinks"
 
   [plugins.inputs]
