@@ -14,11 +14,11 @@ package = "netlify-plugin-chromium"
 [[plugins]]
 package = "netlify-plugin-lighthouse"
 
-# Requires paid account
+# Requires paid account: https://www.debugbear.com/docs/getting-started-api-cli
 #[[plugins]]
 #package = "netlify-build-plugin-debugbear"
 
-# Requires paid account
+# Requires paid account: see: https://docs.pagewatch.dev/guide/netlify.html
 #[[plugins]]
 #package = "netlify-plugin-pagewatch"
 
