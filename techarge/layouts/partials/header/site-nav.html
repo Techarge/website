@@ -1,9 +1,9 @@
-<section class=" -mb-5px {{ if (eq .Section `contact`) }} bg-white {{ else }}bg-tc-green{{ end }}">
+<section class=" -mb-5px {{ if (eq .Section `contact`) }} bg-tc-green md:bg-white {{ else }}bg-tc-green{{ end }}">
 
-    <nav class="flex items-center container justify-between flex-wrap pt-25px md:pt-60px lg:pt-115px pb-0 {{ if (eq .Section `contact`) }} bg-white {{ else }}bg-tc-green{{ end }}">
+    <nav class="flex items-center container justify-between flex-wrap pt-25px md:pt-60px lg:pt-115px pb-0 {{ if (eq .Section `contact`) }}  bg-tc-green md:bg-white {{ else }}bg-tc-green{{ end }}">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
 {{ if (eq .Section `contact`) }}
-            <a href="/"><img class="w-98px md:w-200px filter invert" alt="Techarge logo" src="/images/Logo.svg"></a>
+            <a href="/"><img class="w-98px md:w-200px md:filter md:invert" alt="Techarge logo" src="/images/Logo.svg"></a>
             {{ else }}
             <a href="/"><img class="w-98px md:w-200px" alt="Techarge logo" src="/images/Logo.svg"></a>
             {{ end }}
