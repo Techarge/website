@@ -350,6 +350,7 @@ module.exports = {
                 'slideInFromLeft': 'slideInFromLeft 2s ease-in-out 0s 1',
                 'slideInFromRight': 'slideInFromRight 2s ease-in-out 0s 1',
                 'fadeInFromBottom': 'fadeInFromBottom 2s ease-in 0s 1',
+                'dnaRotate': 'dnaRotate 2s ease-in 0s 1',
             },
             keyframes: {
                 slideInFromLeft: {
@@ -366,6 +367,11 @@ module.exports = {
                     '0%': {transform: 'translateY(80px);', opacity: '0;'},
                     '50%': {opacity: '0.75;'},
                     '100%': {transform: 'translateY(0);', opacity: '1;'},
+                },
+                dnaRotate: {
+                    '0%': {transform: 'rotateY(0deg);'},
+                    '50%': {transform: 'rotateY(1800deg);'},
+                    '100%': {transform: 'rotateY(0deg);'},
                 },
             },
         },
