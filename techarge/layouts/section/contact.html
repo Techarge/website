@@ -8,9 +8,11 @@
 </head>
 <body class="contact">
 <section class="relative overflow-x-hidden">
+
 {{ partial "header/site-nav.html" . }}
-<h1 class="text-center">Contact</h1>
- <div class="hidden md:flex js-show-left absolute top-90px md:top-214px -left-50px -left-100px">
+    <div class="relative">
+<h1 class=" mt-50px text-left md:text-center container">Contact</h1>
+ <div class="hidden md:flex js-show-left absolute -left-50px -left-100px md:-left-0 md:-top-40px">
 
         <div class="rounded-tr-80px md:rounded-tr-50px lg:rounded-tr-100px w-126px h-64px md:w-215px md:h-109px lg:w-382px lg:h-194px bg-tc-orange">
 
@@ -20,7 +22,7 @@
         </div>
     </div>
 
-    <div class="flex md:hidden js-show-right absolute mt-8 -right-80px xs:-right-0">
+    <div class="flex md:hidden js-show-right absolute mt-8 -top-50px md:-right-80px -right-40px">
 
         <div class="rounded-tl-50px w-126px h-64px bg-tc-orange">
 
@@ -30,25 +32,28 @@
         </div>
     </div>
     <section
-            class="container bg-white pt-50px pb-100px sm:pb-85px md:pt-125px md:pb-75px lg:pt-120px lg:pb-120px overflow-hidden">
+            class="xs:container bg-white pt-50px pb-120px sm:pb-120px md:pt-0 md:pb-150px lg:pt-120px lg:pb-120px overflow-hidden">
 
-        <div class="border">
-              <form class="flex flex-col" action="">
-                  <h3>Tell us about yourself</h3>
-    <input type="text" id="fname" name="firstname" placeholder="First name">
+        <div class="border border-black border-opacity-50 p-40px md:p-64px mx-10px sm:mx-0">
+              <form  action="">
+                  <div class="flex flex-col">
+                  <h3 class="mb-30px">Tell us about yourself</h3>
+                  <div class="md:grid md:grid-cols-2 md:gap-20px">
+    <input type="text" id="fname" name="firstname" class="w-full border border-black border-opacity-50 mb-10px md:mb-30px text-18px px-14px py-9px" placeholder="First name">
 
-    <input type="text" id="lname" name="lastname" placeholder="Last name">
-                  <input type="text" id="companyname" name="companyname" placeholder="Company name">
-                  <input type="email" id="email" name="email" placeholder="Email address">
-                  <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+    <input type="text" id="lname" name="lastname" class="w-full border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Last name">
+                  </div>
+                  <input type="text" id="companyname" name="companyname" class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Company name">
+                  <input type="email" id="email" name="email" class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Email address">
+                  <input type="text" id="phonenumber" name="phonenumber" class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Phone Number">
 
 
-    <textarea id="message" name="message" placeholder="Your message"></textarea>
-
+    <textarea id="message" name="message" class="border border-black border-opacity-50 mb-30px resize-none text-18px px-14px py-9px h-250px" placeholder="Your message"></textarea>
+</div>
     <input type="submit" class="button-medium" value="Submit">
   </form>
         </div>
-        <div class="hidden md:flex js-show-right absolute z-3 -right-10px lg:-right-180px top-65vh mt-8 sm:top-725px md:top-680px lg:top-580px lg:top-650px md:mt-68 lg:mt-40">
+        <div class="hidden md:flex js-show-right absolute z-3 -right-10px md:-right-50px lg:-right-200px md:mt-20px">
             <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-50% w-150px h-171px md:w-210px md:h-239px lg:w-316px lg:h-359px bg-tc-grey absolute right-0 bottom-0">
 
             </div>
@@ -57,7 +62,7 @@
             </div>
         </div>
 
-        <div class="hidden xs:flex md:hidden js-show-left absolute z-3 -left-50px xs:-left-10px top-700px mt-30vh xs:top-200 xs:mt-32 mi:top-160 mi:mt-32 sm:mt-8 sm:top-650px">
+        <div class="flex md:hidden js-show-left absolute z-3 -left-50px mt-70px">
             <div class="rounded-tr-80px w-120px h-141px xs:w-150px xs:h-171px bg-tc-grey absolute left-0 bottom-0">
 
             </div>
@@ -67,7 +72,7 @@
         </div>
 
     </section>
-
+    </div>
 <section class="bg-white">
     <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
         {{ partial "subscribe.html" . }}

@@ -150,7 +150,9 @@ module.exports = {
                 'fit-c': 'fit-content'
             },
             padding: {
+                '9px': '9px',
                 '10px': '10px',
+                '14px': '14px',
                 '15px': '15px',
                 '20px': '20px',
                 '25px': '25px',
@@ -169,6 +171,7 @@ module.exports = {
                 '56px': '56px',
                 '58px': '58px',
                 '60px': '60px',
+                  '64px': '64px',
                 '65px': '65px',
                 '70px': '70px',
                 '75px': '75px',
@@ -246,6 +249,7 @@ module.exports = {
                 '-80px': '-80px',
                 '-70px': '-70px',
                 '-50px': '-50px',
+                '-40px': '-40px',
                 '-20px': '-20px',
                 '-10px': '-10px',
                 '2px': '2px',
