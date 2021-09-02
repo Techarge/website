@@ -178,6 +178,45 @@ p .small {
     animation-delay: 0.25s;
 }
 
+
+.animation-delay-1 {
+    animation-delay: 0.25s;
+}
+.animation-delay-9 {
+    animation-delay: 2.25s;
+}
+
+.animation-delay-10 {
+    animation-delay: 2.5s;
+}
+
+.phone:hover .animate-fade-in {
+    display: block;
+    opacity:0;
+}
+.phone:hover .animation-left-reveal {
+display: block;
+    opacity: 0;
+    mask-image: linear-gradient(to left, #0000 25%, #000 75%);
+    mask-size: 500%;
+}
+
+.animation-left-reveal.animate-in {
+    animation-name: text-wipe;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay: 0.25s;
+}
+
+.animation-fade-in .animate-in {
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
 @keyframes text-wipe {
     0% {
         opacity: 1;
@@ -187,6 +226,16 @@ p .small {
     80% {
         opacity: 1;
         mask-position: 0%;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
     }
 }
 
