@@ -19,7 +19,7 @@
 
 {{ $styles := resources.Get "css/main.css" | postCSS }}
 {{ $js := resources.Get "js/main.js" | js.Build (dict "params" (dict "api" "https://example.org/api")) }}
-
+{{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
 {{ else }}

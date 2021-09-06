@@ -190,10 +190,6 @@ p .small {
     animation-delay: 2.5s;
 }
 
-.animation-delay-12 {
-    animation-delay: 3s;
-}
-
 .phone:hover .animate-fade-in {
     display: block;
     opacity:0;
@@ -234,7 +230,7 @@ display: block;
 
     80% {
         opacity: 1;
-        mask-position: 0%;
+        mask-position: 0;
     }
 }
 

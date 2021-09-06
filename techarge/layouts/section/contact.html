@@ -2,80 +2,87 @@
 <html lang="en">
 <head>
     {{ partial "head.html" . }}
+    <title>Contact</title>
 </head>
 <body class="contact">
 <section class="relative overflow-x-hidden">
 
-{{ partial "header/site-nav.html" . }}
+    {{ partial "header/site-nav.html" . }}
     <div class="relative">
-<h1 class=" mt-50px text-left md:text-center container">Contact</h1>
- <div class="hidden md:flex js-show-left absolute -left-50px -left-100px md:-left-50px lg:-left-70px md:-top-40px xl:top-75px">
+        <h1 class=" mt-50px text-left md:text-center container">Contact</h1>
+        <div class="hidden md:flex js-show-left absolute -left-50px -left-100px md:-left-50px lg:-left-70px md:-top-40px xl:top-75px">
 
-        <div class="rounded-tr-80px md:rounded-tr-50px lg:rounded-tr-100px xl:rounded-br-100px xl:rounded-tr-0px w-126px h-64px md:w-215px md:h-109px lg:w-382px lg:h-194px bg-tc-orange">
+            <div class="rounded-tr-80px md:rounded-tr-50px lg:rounded-tr-100px xl:rounded-br-100px xl:rounded-tr-0px w-126px h-64px md:w-215px md:h-109px lg:w-382px lg:h-194px bg-tc-orange">
 
+            </div>
+            <div class="rounded-br-50% xl:rounded-br-0px xl:rounded-tr-50% w-80px h-92px md:w-138px md:h-156px lg:w-245px lg:h-278px bg-tc-yellow absolute left-0 top-0 xl:bottom-0 xl:top-auto">
+
+            </div>
         </div>
-        <div class="rounded-br-50% xl:rounded-br-0px xl:rounded-tr-50% w-80px h-92px md:w-138px md:h-156px lg:w-245px lg:h-278px bg-tc-yellow absolute left-0 top-0 xl:bottom-0 xl:top-auto">
 
+        <div class="flex md:hidden js-show-right absolute mt-8 -top-50px md:-right-80px -right-40px">
+
+            <div class="rounded-tl-50px w-126px h-64px bg-tc-orange">
+
+            </div>
+            <div class="rounded-bl-50% w-80px h-92px bg-tc-yellow absolute right-0 top-0">
+
+            </div>
         </div>
+        <section
+                class="xs:container bg-white pt-50px pb-120px sm:pb-120px md:pt-0 md:pb-150px lg:pt-120px lg:pb-120px xl:pt-50px overflow-hidden">
+
+            <div class="border border-black border-opacity-50 p-20px xs:p-40px md:p-64px mx-10px sm:mx-0 lg:w-600px lg:m-auto xl:w-3/5">
+                <p class="mb-10px text-16px text-center">Please feel free to contact us using our details below. For any
+                    desktop users there
+                    is also the option to chat with us directly at the bottom right.</p>
+                <p class="mb-30px text-16px text-center"> We look forward to hearing from you!</p>
+                <h3 class="mb-28px inline rounded-20px">Techarge Limited</h3>
+                <section id="address" class="flex mb-30px mt-30px">
+                    <div class="bg-tc-grey w-fit-c h-50px rounded-7px">
+                        <img alt="data icon" src="/images/pin.svg" width="50px" height="50px"></div>
+                    <p class="ml-4"><a class="hover:underline" href="https://goo.gl/maps/fNDersJHFG258ayd9">Labs Triangle, <br> Stables Market,
+                        <br> Camden, <br>London, <br>NW1 8AB<br></a></p>
+                </section>
+                <section id="mobile" class="flex items-center mb-30px">
+                    <div class="bg-tc-grey w-fit-c rounded-7px">
+                        <img alt="data icon" src="/images/Letter.svg" width="50px" height="auto">
+                    </div>
+                    <p class="ml-4"><a class="hover:underline" href="tel:+443301334400">+44 330 133 4400</a></p>
+                </section>
+                <section id="email" class="flex items-center mb-30px">
+                    <div class="bg-tc-grey w-fit-crounded-7px">
+                        <img alt="data icon" src="/images/mobile-blue.svg" width="50px" height="auto">
+                    </div>
+                    <p class="ml-4"><a class="hover:underline" href="mailto:info@techarge.co.uk">info@techarge.co.uk</a></p>
+                </section>
+            </div>
+            <div class="hidden md:flex js-show-right absolute z-3 -right-10px md:-right-50px lg:-right-200px md:mt-20px">
+                <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-50% w-150px h-171px md:w-210px md:h-239px lg:w-316px lg:h-359px bg-tc-grey xl:w-450px xl:h-510px absolute right-0 bottom-0">
+
+                </div>
+                <div class="rounded-bl-50px md:rounded-bl-80px lg:rounded-bl-100px w-235px h-119px md:w-329px md:h-166px lg:w-494px lg:h-250px xl:w-705px xl:h-350px bg-tc-dark-green">
+
+                </div>
+            </div>
+
+            <div class="flex md:hidden js-show-left absolute z-3 -left-50px mt-70px">
+                <div class="rounded-tr-80px w-120px h-141px xs:w-150px xs:h-171px bg-tc-grey absolute left-0 bottom-0">
+
+                </div>
+                <div class="rounded-br-50px w-205px h-89px xs:w-235px xs:h-119px bg-tc-dark-green">
+
+                </div>
+            </div>
+
+        </section>
     </div>
-
-    <div class="flex md:hidden js-show-right absolute mt-8 -top-50px md:-right-80px -right-40px">
-
-        <div class="rounded-tl-50px w-126px h-64px bg-tc-orange">
-
+    <section class="bg-white">
+        <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
+            {{ partial "subscribe.html" . }}
         </div>
-        <div class="rounded-bl-50% w-80px h-92px bg-tc-yellow absolute right-0 top-0">
-
-        </div>
-    </div>
-    <section
-            class="xs:container bg-white pt-50px pb-120px sm:pb-120px md:pt-0 md:pb-150px lg:pt-120px lg:pb-120px xl:pt-50px overflow-hidden">
-
-        <div class="border border-black border-opacity-50 p-20px xs:p-40px md:p-64px mx-10px sm:mx-0 lg:w-600px lg:m-auto xl:w-3/5">
-              <form  action="/thank_you" name="contactForm" method="POST">
-                  <div class="flex flex-col">
-                  <h3 class="mb-30px">Tell us about yourself</h3>
-                  <div class="md:grid md:grid-cols-2 md:gap-20px">
-    <input type="text" id="firstname" name="firstname" class="w-full border border-black border-opacity-50 mb-10px md:mb-30px text-18px px-14px py-9px" placeholder="First name">
-
-    <input type="text" id="lastname" name="lastname" class="w-full border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Last name">
-                  </div>
-                  <input type="text" id="companyname" name="companyname" class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Company name">
-                  <input type="email" id="email" name="email" class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Email address">
-                  <input type="text" id="phonenumber" name="phonenumber" class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Phone Number">
-
-
-    <textarea id="message" name="message" class="border border-black border-opacity-50 mb-30px resize-none text-18px px-14px py-9px h-250px" placeholder="Your message"></textarea>
-</div>
-    <input type="submit" class="button-medium" value="Submit">
-  </form>
-        </div>
-        <div class="hidden md:flex js-show-right absolute z-3 -right-10px md:-right-50px lg:-right-200px md:mt-20px">
-            <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-50% w-150px h-171px md:w-210px md:h-239px lg:w-316px lg:h-359px bg-tc-grey xl:w-450px xl:h-510px absolute right-0 bottom-0">
-
-            </div>
-            <div class="rounded-bl-50px md:rounded-bl-80px lg:rounded-bl-100px w-235px h-119px md:w-329px md:h-166px lg:w-494px lg:h-250px xl:w-705px xl:h-350px bg-tc-dark-green">
-
-            </div>
-        </div>
-
-        <div class="flex md:hidden js-show-left absolute z-3 -left-50px mt-70px">
-            <div class="rounded-tr-80px w-120px h-141px xs:w-150px xs:h-171px bg-tc-grey absolute left-0 bottom-0">
-
-            </div>
-            <div class="rounded-br-50px w-205px h-89px xs:w-235px xs:h-119px bg-tc-dark-green">
-
-            </div>
-        </div>
-
     </section>
-    </div>
-<section class="bg-white">
-    <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px lg:pt-310px pb-48px md:pb-70px lg:pb-58px">
-        {{ partial "subscribe.html" . }}
-    </div>
-</section>
-{{ partial "footer.html" . }}
+    {{ partial "footer.html" . }}
 </section>
 </body>
 </html>
