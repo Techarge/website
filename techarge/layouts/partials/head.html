@@ -18,6 +18,7 @@
       rel="stylesheet">
 
 {{ $styles := resources.Get "css/main.css" | postCSS }}
+{{ $js := resources.Get "js/main.js" | js.Build (dict "params" (dict "api" "https://example.org/api")) }}
 
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
@@ -25,12 +26,8 @@
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
 {{ end }}
-<script defer language="javascript" type="text/javascript"  src="{{ "js/main.js" | urlize | relURL }}"></script>
+<script defer language="javascript" type="text/javascript"  src="{{ $js.RelPermalink }}"></script>
 <link rel="canonical" href="https://techarge.co.uk"/>
-
-    	<!-- turbolinks: https://github.com/gohugoio/hugo-mod-jslibs/tree/master/turbolinks -->
-<!-- {{ partialCached "jslibs/alpinejs/script-src.html" "-" }} -->
-<!-- {{ partialCached "jslibs/turbolinks/script-src.html" "-" }} -->
 <script>
 window.Papercups = {
   config: {
