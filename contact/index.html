@@ -12,11 +12,14 @@
 <link rel=dns-prefetch href=//app.papercups.io>
 <link rel=preconnect href=https://app.papercups.io crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel=stylesheet>
-<link rel=stylesheet href="/css/main.min.14cf4f8ff18120f3d5cab898093c0f374774ebecca7ecd71e4f4b30d644c222e.css" integrity="sha256-FM9Pj/GBIPPVyriYCTwPN0d06+zKfs1x5PSzDWRMIi4=">
+<script type=module src=/jslibs/alpinejs/alpine.min.b22d8b923a3ea4c6c4018b940e8d09241267ad99491c5004ec951eb2a7984591.js integrity="sha256-si2Lkjo+pMbEAYuUDo0JJBJnrZlJHFAE7JUesqeYRZE="></script>
+<script nomodule src=/jslibs/alpinejs/alpine-ie11.min.d76a374c2679de50126e803be55d20b0b55b18982eedba4f62e242bac7c71b2e.js integrity="sha256-12o3TCZ53lASboA75V0gsLVbGJgu7bpPYuJCusfHGy4=" defer></script>
+<link rel=stylesheet href="/css/main.min.e566e757bdcedd414a4401b4f12e8ea62f6e6d40b052a788a5f1be67bad10546.css" integrity="sha256-5WbnV73O3UFKRAG08S6Opi9ubUCwUqeIpfG+Z7rRBUY=">
 <script defer language=javascript type=text/javascript src=/js/main.js></script>
 <link rel=canonical href=https://techarge.co.uk>
 <script>window.Papercups={config:{accountId:"6520ebda-e015-47bb-95d9-0544d4d839e9",title:"Welcome to Techarge Limited",subtitle:"How can we help with your next Tech project?",primaryColor:"#ff6900",greeting:"",awayMessage:"Sorry, we're away at the moment, but leave us a message and we'll get back to you.",newMessagePlaceholder:"Start typing...",showAgentAvailability:!1,agentAvailableText:"We're online right now!",agentUnavailableText:"We're away at the moment.",requireEmailUpfront:!1,iconVariant:"outlined",baseUrl:"https://app.papercups.io"}}</script>
 <script type=text/javascript async defer src=https://app.papercups.io/widget.js></script>
+<title>Contact</title>
 </head>
 <body class=contact>
 <section class="relative overflow-x-hidden">
@@ -75,20 +78,29 @@ Team
 </div>
 <section class="xs:container bg-white pt-50px pb-120px sm:pb-120px md:pt-0 md:pb-150px lg:pt-120px lg:pb-120px xl:pt-50px overflow-hidden">
 <div class="border border-black border-opacity-50 p-20px xs:p-40px md:p-64px mx-10px sm:mx-0 lg:w-600px lg:m-auto xl:w-3/5">
-<form action=/thank_you name=contactForm method=post>
-<div class="flex flex-col">
-<h3 class=mb-30px>Tell us about yourself</h3>
-<div class="md:grid md:grid-cols-2 md:gap-20px">
-<input type=text id=firstname name=firstname class="w-full border border-black border-opacity-50 mb-10px md:mb-30px text-18px px-14px py-9px" placeholder="First name">
-<input type=text id=lastname name=lastname class="w-full border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Last name">
+<p class="mb-10px text-16px text-center">Please feel free to contact us using our details below. For any
+desktop users there
+is also the option to chat with us directly at the bottom right.</p>
+<p class="mb-30px text-16px text-center"> We look forward to hearing from you!</p>
+<h3 class="mb-28px inline rounded-20px">Techarge Limited</h3>
+<section id=address class="flex mb-30px mt-30px">
+<div class="bg-tc-grey w-fit-c h-50px rounded-7px">
+<img alt="data icon" src=/images/pin.svg width=50px height=50px></div>
+<p class=ml-4><a class=hover:underline href=https://goo.gl/maps/fNDersJHFG258ayd9>Labs Triangle, <br> Stables Market,
+<br> Camden, <br>London, <br>NW1 8AB<br></a></p>
+</section>
+<section id=mobile class="flex items-center mb-30px">
+<div class="bg-tc-grey w-fit-c rounded-7px">
+<img alt="data icon" src=/images/Letter.svg width=50px height=auto>
 </div>
-<input type=text id=companyname name=companyname class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Company name">
-<input type=email id=email name=email class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Email address">
-<input type=text id=phonenumber name=phonenumber class="border border-black border-opacity-50 mb-30px text-18px px-14px py-9px" placeholder="Phone Number">
-<textarea id=message name=message class="border border-black border-opacity-50 mb-30px resize-none text-18px px-14px py-9px h-250px" placeholder="Your message"></textarea>
+<p class=ml-4><a class=hover:underline href=tel:+443301334400>+44 330 133 4400</a></p>
+</section>
+<section id=email class="flex items-center mb-30px">
+<div class="bg-tc-grey w-fit-crounded-7px">
+<img alt="data icon" src=/images/mobile-blue.svg width=50px height=auto>
 </div>
-<input type=submit class=button-medium value=Submit>
-</form>
+<p class=ml-4><a class=hover:underline href=mailto:info@techarge.co.uk>info@techarge.co.uk</a></p>
+</section>
 </div>
 <div class="hidden md:flex js-show-right absolute z-3 -right-10px md:-right-50px lg:-right-200px md:mt-20px">
 <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-50% w-150px h-171px md:w-210px md:h-239px lg:w-316px lg:h-359px bg-tc-grey xl:w-450px xl:h-510px absolute right-0 bottom-0">
