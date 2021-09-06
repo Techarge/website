@@ -15,7 +15,7 @@
 <link rel=dns-prefetch href=//app.papercups.io>
 <link rel=preconnect href=https://app.papercups.io crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel=stylesheet>
-<link rel=stylesheet href=/css/main.min.27019b654507809cb0c80a06419f941437ce010cd6d854665e17e8e2df31692c.css integrity=sha256-JwGbZUUHgJywyAoGQZ+UFDfOAQzW2FRmXhfo4t8xaSw=>
+<link rel=stylesheet href="/css/main.min.4983693fb63fdf2910712c88e6591478d1be788edb926471b23a29b656423c1a.css" integrity="sha256-SYNpP7Y/3ykQcSyI5lkUeNG+eI7bkmRxsjoptlZCPBo=">
 <link rel=canonical href=https://techarge.co.uk>
 <script>window.Papercups={config:{accountId:"6520ebda-e015-47bb-95d9-0544d4d839e9",title:"Welcome to Techarge Limited",subtitle:"How can we help with your next Tech project?",primaryColor:"#ff6900",greeting:"",awayMessage:"Sorry, we're away at the moment, but leave us a message and we'll get back to you.",newMessagePlaceholder:"Start typing...",showAgentAvailability:!1,agentAvailableText:"We're online right now!",agentUnavailableText:"We're away at the moment.",requireEmailUpfront:!1,iconVariant:"outlined",baseUrl:"https://app.papercups.io"}}</script>
 <script type=text/javascript async defer src=https://app.papercups.io/widget.js></script>
@@ -25,8 +25,8 @@
 <a href=/contact><div class="hidden md:block rounded-bl-20px fixed -right-100px top-55vh bg-tc-orange w-fit-c transform rotate-90 py-20px px-55px z-20">
 <svg class="inline-block transform -rotate-90" xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28" fill="none"><path d="M21.5349 26.0481V.964744C21.5349.43112 21.1069-.187078e-7 20.5772-.418636e-7L1.42264-.879135e-6C.892897-.902291e-6.464912.431119.464912.964743L.464911 26.0481C.464911 26.5817.892895 27.0128 1.42264 27.0128H20.5772C21.1069 27.0128 21.5349 26.5817 21.5349 26.0481zm-3.3161-1.206H2.6198V2.17067h15.599l.6435-.83209 1.5114 1.18483L19.377 3.81375V23.2021L20.3737 24.4924l-1.5114 1.1849-.6435-.8352zm1.1612-1.64-7.4822-9.6957L19.38 3.81074 20.3767 2.52039 18.8652 1.33557l-.6434.83209L10.2726 12.4663C10.0442 12.7625 9.92022 13.1268 9.92022 13.5019c0 .375.12398.739400000000002.35238 1.0356l7.9462 10.3046L18.8623 25.6742l1.5114-1.1848L19.38 23.2021z" fill="#3a3a3a"/></svg><p class="text-30px font-bold font-josefin text-tc-light-black relative top-5px ml-16px inline-block">Contact</p>
 </div></a>
-<section class="bg-tc-green -mb-5px">
-<nav class="flex items-center container justify-between flex-wrap bg-tc-green pt-25px md:pt-60px lg:pt-115px pb-0">
+<section class="-mb-5px bg-tc-green">
+<nav class="flex items-center container justify-between flex-wrap pt-25px md:pt-60px lg:pt-115px pb-0 bg-tc-green">
 <div class="flex items-center flex-shrink-0 text-white mr-6">
 <a href=/><img class="w-98px md:w-200px" alt="Techarge logo" src=/images/Logo.svg></a>
 </div>
@@ -47,7 +47,7 @@
 <div x-data={open:false}>
 <button @click="open=true" class="flex items-center p-15px h-60px w-60px bg-tc-yellow text-tc-icons focus:outline-none"><svg class="fill-current text-tc-icons m-auto" x-show="open" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 24 24.2918 1.70816" stroke="#7a7a7a" stroke-width="3" stroke-linecap="round"/><path d="M2 2 24.2918 24.2918" stroke="#7a7a7a" stroke-width="3" stroke-linecap="round"/></svg><svg x-show="!open" class="fill-current text-tc-icons m-auto" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
 </button>
-<div class="mt-10px pl-60px py-50px w-full text-22px text-tc-light-black bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0" x-show=open @click.away="open=false">
+<div class="mt-5px pl-60px py-50px w-full text-22px text-tc-light-black bg-tc-yellow block flex-grow md:flex md:items-center md:w-auto w-screen fixed left-0" x-show=open @click.away="open=false">
 <div class=md:flex-grow>
 <a href=/ class="block mb-20px md:inline-block md:mt-0 mr-4">
 Home
@@ -94,24 +94,30 @@ tackle problems with innovative thinking, resulting in smart and iterative solut
 us</a>
 </div>
 </div>
-<div class="hidden md:flex js-show-right absolute -right-10px lg:-right-180px top-65vh mt-8 sm:top-725px md:top-680px lg:top-580px lg:top-650px md:mt-68 lg:mt-40">
+<div class="hidden md:flex js-show-right absolute z-3 -right-10px lg:-right-180px top-65vh mt-8 sm:top-725px md:top-680px lg:top-580px lg:top-650px md:mt-68 lg:mt-40">
 <div class="rounded-tl-80px md:rounded-tl-130px lg:rounded-tl-50% w-150px h-171px md:w-210px md:h-239px lg:w-316px lg:h-359px bg-tc-grey absolute right-0 bottom-0">
 </div>
 <div class="rounded-bl-50px md:rounded-bl-80px lg:rounded-bl-100px w-235px h-119px md:w-329px md:h-166px lg:w-494px lg:h-250px bg-tc-dark-green">
 </div>
 </div>
-<div class="hidden xs:flex md:hidden js-show-left absolute -left-50px xs:-left-10px top-700px mt-30vh xs:top-200 xs:mt-32 mi:top-160 mi:mt-32 sm:mt-8 sm:top-650px">
+<div class="hidden xs:flex md:hidden js-show-left absolute z-3 -left-50px xs:-left-10px top-700px mt-30vh xs:top-200 xs:mt-32 mi:top-160 mi:mt-32 sm:mt-8 sm:top-650px">
 <div class="rounded-tr-80px w-120px h-141px xs:w-150px xs:h-171px bg-tc-grey absolute left-0 bottom-0">
 </div>
 <div class="rounded-br-50px w-205px h-89px xs:w-235px xs:h-119px bg-tc-dark-green">
 </div>
 </div>
 </section>
-<section class="bg-white pt-100px xs:pt-150px sm:pt-100px pb-25px md:pt-130px md:pb-56px lg:pt-100px lg:pb-44px">
+<section class="bg-white pt-100px xs:pt-80px sm:pt-150px pb-25px md:pt-130px md:pb-56px lg:pt-100px lg:pb-44px relative">
 <div class="container relative z-2">
-<div class="grid md:grid-cols-2 lg:pl-110px lg:w-3/ mb-50px lg:mb-168px">
+<div class="phone flex md:hidden bg-tc-green rounded-20px h-120px w-120px mb-30px p-10px md:p-15px lg:p-25px flex justify-center relative float-right sm:-top-140px">
+<img class="absolute w-100px" alt="mobile icon" src="/images/phone 1.svg">
+<img class="absolute animation-left-reveal animate-in animation-delay-8 w-100px" alt="mobile icon" src="/images/phone 3.svg">
+<img class="absolute animation-left-reveal animate-in animation-delay-8 w-100px" alt="mobile icon" src="/images/phone 4.svg">
+</div>
+<div class="md:grid md:grid-cols-2 lg:pl-110px lg:w-3/ mb-50px lg:mb-168px">
 <div class="relative z-2">
-<h3 class=mb-30px>Unlock senior technology expertise, whenever you need it</h3>
+<h3 class="mb-30px clear-both sm:clear-none">Unlock senior technology expertise, whenever you need
+it</h3>
 <p>New platforms and applications may be the outcome, but developing a deep understanding of the
 problem is where we start. We treat every project as a collaborative effort and pride
 ourselves on our communication,empathy and listening skills.</p>
@@ -120,20 +126,22 @@ Our experts will act as on-demand CTOs, offering a holistic review of your exist
 infrastructure. We will also work closely with your teams to select the right solutions and
 develop a clear technology roadmap that supports your core business goals.</p></div>
 <div class="hidden md:block order-2 md:order-2 relative mt-65px h-355px lg:ml-75px ml-0px right-75px md:right-0">
-<div class="static bg-tc-grey rounded-7px lg:rounded-20px h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-10px rounded-20px flex relative z-10 top-30px left-24 lg:left-28 xl:left-60">
-<img class=m-auto alt="light bulb icon" src=/images/battery.svg>
-<img class="mx-auto hidden active" src="https://lh4.googleusercontent.com/i1RprwcvxhbN2TAMunNxS4RiNVT0DvlD9FNQCvPFuJ0=w140-h165-no">
+<div class="battery bg-tc-grey rounded-7px lg:rounded-20px h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-10px rounded-20px flex items-center justify-center relative z-10 top-30px left-24 lg:left-28 xl:left-60">
+<img class="m-auto absolute" alt="battery icon" src=/images/battery.svg>
+<img class="hidden m-auto absolute animation-text-wipe animate-in" alt="charged battery icon" src="/images/battery charged.svg">
 </div>
-<div class="static bg-tc-green rounded-20px h-72px w-72px md:h-130px md:w-130px lg:w-158px lg:h-158px p-10px md:p-15px lg:p-25px flex justify-center relative float-right">
-<img alt="mobile icon" src=/images/mobile.svg>
+<div class="phone bg-tc-green rounded-20px h-72px w-72px md:h-130px md:w-130px lg:w-158px lg:h-158px p-10px md:p-15px lg:p-25px flex justify-center items-center relative float-right">
+<img class="absolute w-100px" alt="mobile icon" src="/images/phone 1.svg">
+<img class="absolute animation-left-reveal animate-in animation-delay-8 w-100px" alt="mobile icon" src="/images/phone 3.svg">
+<img class="absolute animation-left-reveal animate-in animation-delay-8 w-100px" alt="mobile icon" src="/images/phone 4.svg">
 </div>
-<div class="compass bg-tc-grey rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px md:p-25px lg:p-32px flex justify-center relative md:top-16 lg:top-20">
+<div class="compass bg-tc-grey rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px lg:p-32px flex justify-center relative md:top-16 md:right-0 lg:right-350px xl:right-0 lg:top-350px xl:top-20">
 <img class=absolute alt="compass icon" src="/images/compass bottom.svg">
 <img class="absolute compass-top" alt="compass icon" src="/images/compass top.svg">
 </div>
 </div>
 </div>
-<div class="js-show-left absolute -left-100px lg:-left-230px lx:-left-180px top-65vh mt-8 sm:top-1362px md:top-1580px lg:top-1580px sm:mt-90px">
+<div class="js-show-left absolute -left-10px sm:-left-100px md:-left-180px lg:-left-230px xl:-left-180px sm:top-500px md:top-800px lg:top-750px xl:top-550px">
 <div class="rounded-tr-80px md:rounded-tr-100px lg:rounded-tr-200px w-238px h-120px md:w-398px md:h-200px lg:w-662px lg:h-335px bg-tc-yellow">
 </div>
 <div class="rounded-br-50% w-152px h-173px md:w-255px md:h-289px lg:w-424px lg:h-481px bg-tc-green absolute left-0 top-0">
@@ -156,8 +164,8 @@ and technologists fully understand the human drivers behind new software product
 Empathy is our core operating principle and quality we are proud of in all of our team members.</p>
 </div>
 <div class="md:order-2 col-span-2 md:col-span-1 lg:w-415px">
-<div class="hidden md:block bg-tc-grey rounded-7px lg:rounded-20px h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-10px rounded-20px flex relative z-10 top-30px left-24 lg:left-28 xl:left-60">
-<img alt="light bulb icon" src=/images/mouse.svg>
+<div class="hidden md:block bg-tc-grey rounded-7px lg:rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px md:p-25px lg:p-32px flex relative z-10 top-30px left-24 lg:left-28 xl:left-60">
+<img alt="mouse icon" src=/images/mouse.svg>
 </div>
 <div class="block md:hidden">
 <h3 class="mb-15px md:mb-30px">Work with digital problem solvers</h3>
@@ -176,8 +184,14 @@ members.</p>
 A member of</h4>
 <img class="nominet w-116px h-110px" alt="nominet logo" src=/images/nominet.svg>
 </div>
-<div class="block md:hidden bg-tc-grey rounded-7px lg:rounded-20px h-52px w-52px md:h-94px md:w-94px lg:w-115px lg:h-115px p-10px rounded-20px flex relative z-10 top-30px left-24 lg:left-28 xl:left-60">
+<div class="xs:flex md:hidden relative xs:left-30px md:left-0">
+<div class="compass bg-tc-orange rounded-20px h-129px w-129px flex justify-center items-center relative md:top-16 float-right">
+<img class="absolute w-85px h-85px" alt="compass icon" src="/images/compass bottom.svg">
+<img class="absolute compass-top w-85px h-85px" alt="compass icon" src="/images/compass top.svg">
+</div>
+<div class="xs:flex hidden bg-tc-grey relative top-100px -left-180px rounded-20px h-82px w-82px md:h-150px md:w-150px lg:w-182px lg:h-182px p-10px md:p-25px lg:p-32px flex relative z-10 top-100px md:left-30px md:left-0 md:top-30px md:left-24 lg:left-28 xl:left-60">
 <img alt="mouse icon" src=/images/mouse.svg>
+</div>
 </div>
 </aside>
 <div class="relative grid grid-cols-1 md:flex items-end w-full">
@@ -275,6 +289,6 @@ Copyright © Techarge. All Rights Reserved.</p>
 <script src=/jslibs/turbolinks/turbolinks.min.7ce82fbbd878e569e81a1fb6f32bb54396bc915126ea185f2a5c924281364d98.js integrity="sha256-fOgvu9h45WnoGh+28yu1Q5a8kVEm6hhfKlySQoE2TZg=" crossorigin=anonymous defer></script>
 </footer>
 </section>
-<script>const callback=function(a){a.forEach(a=>{console.log(a),a.isIntersecting&&(a.target.classList.remove("opacity-0"),a.target.classList.add("animate-slideInFromRight"),a.target.classList.add("opacity-1"))})},observer=new IntersectionObserver(callback),targets=document.querySelectorAll(".js-show-right");targets.forEach(function(a){a.classList.add("opacity-0"),observer.observe(a)});const callback2=function(a){a.forEach(a=>{console.log(a),a.isIntersecting&&(a.target.classList.remove("opacity-0"),a.target.classList.add("animate-slideInFromLeft"),a.target.classList.add("opacity-1"))})},observer2=new IntersectionObserver(callback2),targets2=document.querySelectorAll(".js-show-left");targets2.forEach(function(a){a.classList.add("opacity-0"),observer2.observe(a)})</script>
+<script>const callback=function(a){a.forEach(a=>{a.isIntersecting&&(a.target.classList.remove("opacity-0"),a.target.classList.add("animate-slideInFromRight"),a.target.classList.add("opacity-1"))})},observer=new IntersectionObserver(callback),targets=document.querySelectorAll(".js-show-right");targets.forEach(function(a){a.classList.add("opacity-0"),observer.observe(a)});const callback2=function(a){a.forEach(a=>{a.isIntersecting&&(a.target.classList.remove("opacity-0"),a.target.classList.add("animate-slideInFromLeft"),a.target.classList.add("opacity-1"))})},observer2=new IntersectionObserver(callback2),targets2=document.querySelectorAll(".js-show-left");targets2.forEach(function(a){a.classList.add("opacity-0"),observer2.observe(a)})</script>
 </body>
 </html>
