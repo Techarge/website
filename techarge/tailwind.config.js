@@ -325,6 +325,7 @@ module.exports = {
                 '30px': '30px',
                  '45px': '45px',
                 '50px': '50px',
+                '80px': '80px',
             },
             gap: {
                 '10px': '10px',

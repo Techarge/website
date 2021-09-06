@@ -25,9 +25,12 @@
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
 {{ end }}
-
+<script defer language="javascript" type="text/javascript"  src="{{ "js/main.js" | urlize | relURL }}"></script>
 <link rel="canonical" href="https://techarge.co.uk"/>
 
+    	<!-- turbolinks: https://github.com/gohugoio/hugo-mod-jslibs/tree/master/turbolinks -->
+<!-- {{ partialCached "jslibs/alpinejs/script-src.html" "-" }} -->
+<!-- {{ partialCached "jslibs/turbolinks/script-src.html" "-" }} -->
 <script>
 window.Papercups = {
   config: {
