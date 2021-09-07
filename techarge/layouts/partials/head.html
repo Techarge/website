@@ -18,7 +18,7 @@
       rel="stylesheet">
 
 {{ $styles := resources.Get "css/main.css" | postCSS }}
-{{ $js := resources.Get "js/main.js" | js.Build (dict "params" (dict "api" "https://example.org/api")) }}
+{{ $js := resources.Get "js/main.js" | js.Build }}
 {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
@@ -28,6 +28,9 @@
 {{ end }}
 <script defer language="javascript" type="text/javascript"  src="{{ $js.RelPermalink }}"></script>
 <link rel="canonical" href="https://techarge.co.uk"/>
+
+<script
+  type="text/javascript" async defer minify src="https://app.papercups.io/widget.js"></script>
 <script>
 window.Papercups = {
   config: {
@@ -56,10 +59,5 @@ window.Papercups = {
   },
 };
 </script>
-<script
-  type="text/javascript"
-  async
-  defer
-  src="https://app.papercups.io/widget.js"
-></script>
+
 
