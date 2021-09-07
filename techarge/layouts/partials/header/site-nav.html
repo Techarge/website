@@ -2,13 +2,15 @@
 
     <nav class="flex items-center container justify-between flex-wrap pt-25px md:pt-60px lg:pt-115px pb-0 {{ if (eq .Section `contact`) }}  bg-tc-green md:bg-white {{ else }}bg-tc-green{{ end }}">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-{{ if (eq .Section `contact`) }}
-            <a href="/"><img class="w-98px md:w-200px md:filter md:invert" alt="Techarge logo" src="/images/Logo.svg" width="323" height="234"></a>
+            {{ if (eq .Section `contact`) }}
+            <a href="/"><img class="w-98px md:w-200px md:filter md:invert" alt="Techarge logo" src="/images/Logo.svg"
+                             width="323" height="234"></a>
             {{ else }}
-            <a href="/"><img class="w-98px md:w-200px" alt="Techarge logo" src="/images/Logo.svg" width="323" height="234"></a>
+            <a href="/"><img class="w-98px md:w-200px" alt="Techarge logo" src="/images/Logo.svg" width="323"
+                             height="234"></a>
             {{ end }}
         </div>
-        <div class="hidden md:block z-10 md:mr-12 lg:mr-130px">
+        <div class="hidden md:block z-10 lg:mr-130px">
             <div class="text-sm md:flex-grow">
                 <a href="/"
                    class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
@@ -21,6 +23,10 @@
                 <a href="/about/#team" class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
                     <p>Team</p>
                 </a>
+                <a href="/posts"
+                   class="block mt-4 md:inline-block md:mt-0 text-light-black mr-60px">
+                    <p>Blog</p>
+                </a>
             </div>
         </div>
 
@@ -28,7 +34,8 @@
             <div x-data="{open:false}">
                 <button @click="open=true"
                         class="flex items-center p-15px h-60px w-60px bg-tc-yellow text-tc-icons focus:outline-none">
-                    <svg class="fill-current text-tc-icons m-auto" x-show="open" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                    <svg class="fill-current text-tc-icons m-auto" x-show="open" width="26" height="26"
+                         viewBox="0 0 26 26" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 24L24.2918 1.70816" stroke="#7A7A7A" stroke-width="3" stroke-linecap="round"/>
                         <path d="M2 2L24.2918 24.2918" stroke="#7A7A7A" stroke-width="3" stroke-linecap="round"/>
@@ -52,8 +59,12 @@
                             About
                         </a>
                         <a href="/about/#team"
-                           class="block mt-4 md:inline-block md:mt-0 ">
+                           class="block mb-20px md:inline-block md:mt-0 ">
                             Team
+                        </a>
+                        <a href="/posts"
+                           class="block mt-4 md:inline-block md:mt-0">
+                            Blog
                         </a>
                     </div>
                 </div>
