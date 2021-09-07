@@ -14,3 +14,13 @@ title = "Techarge Site"
 		ignoreImports = false
 		path = "github.com/gohugoio/hugo-mod-jslibs/turbolinks"
 
+[Params]
+    mainSections = ["post"]
+    intro = true
+    headline = "My headline"
+    description = "My description"
+    dateFormat = "Mon, Jan 2, 2006"
+
+[Permalinks]
+    post = "/:filename/"
+
