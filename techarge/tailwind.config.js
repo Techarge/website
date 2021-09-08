@@ -20,6 +20,9 @@ module.exports = {
             '2xl': {'min': '1536px'},
         },
         extend: {
+            lineHeight: {
+                '24px': '24px',
+            },
             zIndex: {
                 '1': 1,
                 '2': 2,
@@ -321,7 +324,9 @@ module.exports = {
             },
             fontSize: {
                 '11px': '11px',
+                '14px': '14px',
                 '18px': '18px',
+                '20px': '20px',
                 '22px': '22px',
                 '30px': '30px',
                 '45px': '45px',
