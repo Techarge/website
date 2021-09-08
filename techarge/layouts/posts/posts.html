@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     {{ partial "head.html" . }}
+    <title>{{.Title}}</title>
 </head>
 <body>
 <section class="relative overflow-x-hidden">
     {{ partial "contact.html" . }}
     {{ partial "header/site-nav.html" . }}
     {{.Content}}
-    <div class="container">
-        {{.Title}}
-        <ul class="all-posts">
+    <div class="container mt-30px">
+        <h2>Techarge Blog</h2>
+        <ul class="grid md:grid-cols-2 gap-30px mt-30px">
             {{range .Site.RegularPages}}
-            <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
-            <li><a href="{{.Permalink}}">{{.Summary}}</a></li>
+            <div>
+                <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
+                <p><a href="{{.Permalink}}">{{.Summary}}</a></p>
+            </div>
             {{end}}
         </ul>
     </div>
