@@ -21,6 +21,12 @@ title = "Techarge Site"
     description = "My description"
     dateFormat = "Mon, Jan 2, 2006"
 
+
 [Permalinks]
     post = "/:filename/"
 
+[taxonomies]
+	author = "authors"
+	tag = "tags"
+	category = "categories"
+	featured_image = "feature_image"

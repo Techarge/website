@@ -14,10 +14,21 @@
         <ul class="grid md:grid-cols-2 gap-30px mt-30px">
             {{range .Site.RegularPages}}
             <div>
+                {{ range .Param "featured_image" }}
+                <img src="{{ . }}">
+                {{ end }}
                 <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
                 <p><a href="{{.Permalink}}">{{.Summary}}</a></p>
+
+                {{ range .Param "authors" }}
+                {{ . }}
+                {{ end }}
+                {{ range .Param "categories" }}
+                <p class="category">{{ . }}</p>
+                {{ end }}
+
             </div>
-            {{end}}
+ {{end}}
         </ul>
     </div>
     <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">

@@ -8,9 +8,18 @@
     {{ partial "contact.html" . }}
     {{ partial "header/site-nav.html" . }}
     <div class="container">
-        {{.Title}}
+        <h2 class="my-30px">{{.Title}}</h2>
         {{.Summary}}
         {{.Content}}
+
+                	{{ range .Param "featured_image" }}
+		<img src="{{ . }}">
+	{{ end }}        	{{ range .Param "authors" }}
+		{{ . }}
+	{{ end }}
+                {{ range .Param "categories" }}
+                <p class="category">{{ . }}</p>
+                {{ end }}
     </div>
     <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
         {{ partial "subscribe.html" . }}
