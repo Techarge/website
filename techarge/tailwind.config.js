@@ -22,6 +22,7 @@ module.exports = {
         extend: {
             lineHeight: {
                 '24px': '24px',
+                '42px': '42px',
             },
             zIndex: {
                 '1': 1,
@@ -329,6 +330,7 @@ module.exports = {
                 '20px': '20px',
                 '22px': '22px',
                 '30px': '30px',
+                '35px': '35px',
                 '45px': '45px',
                 '50px': '50px',
                 '80px': '80px',
