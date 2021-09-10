@@ -13,20 +13,15 @@
         <h2>Techarge Blog</h2>
         <ul class="grid md:grid-cols-2 gap-30px mt-30px">
             {{range .Site.RegularPages}}
-            <div>
+            <div class="bg-tc-green  hover:bg-tc-dark-green p-4 rounded-20px"><a href="{{.Permalink}}">
                 {{ range .Param "featured_image" }}
-                <img src="{{ . }}">
-                {{ end }}
-                <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
-                <p><a href="{{.Permalink}}">{{.Summary}}</a></p>
+                <img class="border-tc-grey" src="{{ . }}">
+                {{ end }}</a>
+                <h3 class="my-10px"><a href="{{.Permalink}}">{{.Title}}</a></h3>
+                <p class="my-10px"><a href="{{.Permalink}}">{{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th {{ end }}{{ .Date.Format "January 2006" }}</a></p>
 
-                {{ range .Param "authors" }}
-                {{ . }}
-                {{ end }}
-                {{ range .Param "categories" }}
-                <p class="category">{{ . }}</p>
-                {{ end }}
-
+<p><a href="{{.Permalink}}">{{.Summary}}</a></p>
+                <button class="button-medium float-right mt-10px"><a href="{{.Permalink}}"><img class="inline" alt="book icon" src="/images/book.svg" width="50" height="50"> Read</a></button>
             </div>
  {{end}}
         </ul>
