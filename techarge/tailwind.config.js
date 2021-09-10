@@ -96,6 +96,7 @@ module.exports = {
                 'fit-c': 'fit-content'
             },
             width: {
+                '30px': '30px',
                 '32px': '32px',
                 '52px': '52px',
                 '60px': '60px',
