@@ -20,8 +20,8 @@
                 <h3 class="my-10px"><a href="{{.Permalink}}">{{.Title}}</a></h3>
                 <p class="my-10px"><a href="{{.Permalink}}">{{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th {{ end }}{{ .Date.Format "January 2006" }}</a></p>
 
-<p><a href="{{.Permalink}}">{{.Summary}}</a></p>
-                <button class="button-medium float-right mt-10px"><a href="{{.Permalink}}"><img class="inline" alt="book icon" src="/images/book.svg" width="50" height="50"> Read</a></button>
+<p class="text-14px"><a href="{{.Permalink}}">{{.Summary}}</a></p>
+                <a href="{{.Permalink}}"><button class="button-medium float-right mt-10px"><img class="inline hover:animate-bookScale" alt="book icon" src="/images/book.svg" width="50" height="50"> Read</button></a>
             </div>
  {{end}}
         </ul>
