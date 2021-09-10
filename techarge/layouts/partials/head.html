@@ -5,19 +5,19 @@
  <meta name="theme-color" content="#AEDAD9"/>
 
 <title>CTO as a Service | Software Consultancy | Techarge</title>
-<meta name="description" content="Techarge is a software consultancy, offering custom development and CTO-as-a-Service support. We specialise in helping companies discover new digital approaches and develop innovative software and web solutions that solve core business challenges."></head>
+<meta name="description" content="Techarge is a software consultancy, offering custom development and CTO-as-a-Service support. We specialise in helping companies discover new digital approaches and develop innovative software and web solutions that solve core business challenges.">
 
 <!-- optimisations to improve startup times -->
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
 <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https//app.papercups.io">
+<link rel="dns-prefetch" href="https://app.papercups.io">
 <!-- end optimisations -->
 
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
       rel="stylesheet">
 
 {{ $styles := resources.Get "css/main.css" | postCSS | minify }}
-{{ $js := resources.Get "js/main.js" | js.Build }}
+{{ $js := resources.Get "js/main.js" | js.Build | minify }}
 {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
@@ -25,11 +25,11 @@
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
 {{ end }}
-<script defer minify async language="javascript" type="text/javascript"  src="{{ $js.RelPermalink }}"></script>
+<script defer async language="javascript" type="text/javascript"  src="{{ $js.RelPermalink }}"></script>
 <link rel="canonical" href="https://techarge.co.uk"/>
 
-<script type="text/javascript" defer minify  async src="https://app.papercups.io/widget.js"></script>
-<script defer minify  async>
+<script type="text/javascript" defer async src="https://app.papercups.io/widget.js"></script>
+<script defer  async>
 window.Papercups = {
   config: {
     accountId: "6520ebda-e015-47bb-95d9-0544d4d839e9",
