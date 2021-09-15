@@ -15,8 +15,9 @@
             document.getElementById("email-status").innerHTML = 'Please enter a valid email address.';
         } else {
             document.getElementById("email-status").innerHTML = 'Thanks for your email, we are adding you to our subscriptions.';
+            alert(`https://5b4khg7nnk.execute-api.us-east-2.amazonaws.com/production?email=${emailValue}&another=abv`)
             var request = new XMLHttpRequest();
-            request.open("GET", "https://5b4khg7nnk.execute-api.us-east-2.amazonaws.com/production", true);
+            request.open("GET", `https://5b4khg7nnk.execute-api.us-east-2.amazonaws.com/production?email=${emailValue}&another=abv`, true);
             request.onload = function () {
                 if (this.status >= 200 && this.status < 400) {
                     var result = this.response;
