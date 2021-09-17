@@ -249,7 +249,9 @@ display: block;
 }
 
 .privacy-details a {
-    color: #9BC1BC;
+    color: #000000;
+    font-family: josefin sans,sans-serif;
+    font-weight: 500;
 }
 
 @media (min-width: 400px) and (max-width: 639px) {
