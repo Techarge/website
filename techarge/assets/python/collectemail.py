@@ -29,9 +29,10 @@ def s3_put_model(fid, prefix, model, bucketName):
     try:
         bodydata = json.dumps(model, indent=4)
         bodydata += " test "
-        s3.put_object(Bucket='techarge.collectemail',
+        s3.put_object(Bucket='techarge-collectemail',
               Key='{0}/{1}.json'.format(prefix,fid),
               Body=f"{bodydata}")
     except Exception as e:
         print(e)
         raise e
+
