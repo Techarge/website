@@ -1,14 +1,15 @@
 var cookieContainer = document.querySelector(".cookie-container");
-var cookieButton = document.querySelector(".cookie-btn");
+var cookieButton = document.querySelector(".cookie-btn");zoe
+  var storage = window.localStorage.getItem("cookieBannerDisplayed");
+if (storage == 'true') {
+    cookieContainer.classList.add("active");
+    window.localStorage.setItem('cookieBannerDisplayed','true');
+  }
+if (storage == 'false') {
+    cookieContainer.classList.remove("active");
+  }
 
 cookieButton.addEventListener("click", function() {
   cookieContainer.classList.remove("active");
-  localStorage.setItem("cookieBannerDisplayed", "true");
+  window.localStorage.setItem('cookieBannerDisplayed','false');
 });
-
-setTimeout(() => {
-  if (!localStorage.getItem("cookieBannerDisplayed")) {
-    cookieContainer.classList.add("active");
-  }
-}, 2000);
-  localStorage.setItem("cookieBannerDisplayed", "true");
