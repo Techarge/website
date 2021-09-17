@@ -1,5 +1,5 @@
 var cookieContainer = document.querySelector(".cookie-container");
-var cookieButton = document.querySelector(".cookie-btn");zoe
+var cookieButton = document.querySelector(".cookie-btn");
   var storage = window.localStorage.getItem("cookieBannerDisplayed");
 if (storage == 'true') {
     cookieContainer.classList.add("active");
