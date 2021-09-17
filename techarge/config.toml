@@ -1,9 +1,6 @@
 baseURL = "https://techarge.co.uk/"
 languageCode = "en-us"
 title = "Techarge Site"
-name = "Techarge Site"
-background_color = "#fff"
-theme_color = "#AEDAD9"
 
 [module]
 	[[module.imports]]
