@@ -1,7 +1,8 @@
 var cookieContainer = document.querySelector(".cookie-container");
 var cookieButton = document.querySelector(".cookie-btn");
-  var storage = window.localStorage.getItem("cookieBannerDisplayed");
-if (storage == 'true') {
+var storage = window.localStorage.getItem("cookieBannerDisplayed");
+
+if (storage) {
     cookieContainer.classList.add("active");
     window.localStorage.setItem('cookieBannerDisplayed','true');
   }
