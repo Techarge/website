@@ -19,10 +19,10 @@ package = "@netlify/plugin-lighthouse"
   # optional, fails build when a category is below a threshold
   [plugins.inputs.thresholds]
     # temp lower thresholds whilst in development
-    performance = 0.75
+    performance = 0.7
     accessibility = 0.9
     best-practices = 0.9
-    pwa = 0.2
+    pwa = 0.3
 #    performance = 0.9
 #    accessibility = 0.9
 #    best-practices = 0.9
