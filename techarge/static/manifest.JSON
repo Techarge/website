@@ -5,17 +5,20 @@
     {
       "src": "/favicon.ico",
       "sizes": "18x18",
-      "type": "image/ico"
+      "type": "image/ico",,
+       "purpose": "any maskable"
     },
     {
       "src": "images/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+       "purpose": "any maskable"
     },
     {
       "src": "images/splashscreen.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+       "purpose": "any maskable"
     }
   ],
   "start_url": "/",
