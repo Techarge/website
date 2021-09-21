@@ -58,11 +58,26 @@ window.Papercups = {
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2CWDTHL7P"></script>
 <script>
+  let cookie = window.localStorage.getItem("disable_cookies");
+  if (!cookie) {
+    window['ga-disable-G-V2CWDTHL7P'] = false;
+  } else {
+   window['ga-disable-G-V2CWDTHL7P'] = true;
+  }
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-V2CWDTHL7P');
+  gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied'
+});
+
+dataLayer.push({
+  'event': 'default_consent'
+});
 </script>
 
 
