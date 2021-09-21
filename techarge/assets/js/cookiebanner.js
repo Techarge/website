@@ -19,7 +19,6 @@ cookieButton.addEventListener("click", function () {
 
 function disableCookies() {
     cookieStore.getAll().then(cookies => cookies.forEach(cookie => {
-    console.log('Cookie deleted:', cookie);
     cookieStore.delete(cookie.name);
 }));
 }
