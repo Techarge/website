@@ -49,12 +49,11 @@ function disableCookies() {
             cookieStore.delete(cookie.name);
         }));
 
-    } else {
+    }
 deleteCookie("_ga");
         deleteCookie("ph_cQo4wipp5ipWWXhTN8kTacBItgqo457yDRtzCMOr-Tw_posthog");
         deleteCookie("_ga_V2CWDTHL7P");
         deleteCookie("csrftoken");
-    }
 }
 
 function enableCookies() {
