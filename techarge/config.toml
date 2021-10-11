@@ -1,7 +1,12 @@
 baseURL = "https://techarge.co.uk/"
 languageCode = "en-us"
 title = "Techarge Site"
+rssLimit = 20
+copyright = "2021 Techarge. All rights reserved"
 
+[author]
+	name = "Ling Li"
+	email = "info@techarge.co.uk"
 [module]
 	[[module.imports]]
 	    disable = false
