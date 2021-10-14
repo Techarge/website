@@ -261,6 +261,30 @@ display: block;
     margin: 10px;
 }
 
+.blog-content a {
+    overflow-wrap: break-word;
+}
+.blog-content a:hover {
+    color: #FF8C21;
+}
+code {
+    background: #f3f4f6;
+    padding: 0.25rem;
+    overflow-wrap: break-word;
+}
+img[alt="RSS Icon for Blog"] {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+
+}
+
+@media only screen and (max-width: 639px) {
+    .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4 {
+            font-size: 2rem;
+    }
+}
+
 .cookie-container {
     display: none;
     bottom: -100%;
