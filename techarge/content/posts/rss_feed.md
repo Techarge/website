@@ -50,7 +50,7 @@ Hugo XML - Github [https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embe
 
 
 ### References
-What Is an RSS Feed? (And Where to Get It) - Lifewire [https://www.lifewire.com/what-is-an-rss-feed-4684568]([https://www.lifewire.com/what-is-an-rss-feed-4684568)
+What Is an RSS Feed? (And Where to Get It) - Lifewire [https://www.lifewire.com/what-is-an-rss-feed-4684568](https://www.lifewire.com/what-is-an-rss-feed-4684568)
 
 What is an RSS feed? - digitaltrends [https://www.digitaltrends.com/computing/what-is-an-rss-feed/](https://www.digitaltrends.com/computing/what-is-an-rss-feed/)
 
