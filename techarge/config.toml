@@ -26,15 +26,23 @@ copyright = "2021 Techarge. All rights reserved"
     description = "My description"
     dateFormat = "Mon, Jan 2, 2006"
 
+[Case_Studies]
+    mainSections = ["case_study"]
+    intro = true
+    headline = "My headline"
+    description = "My description"
+    dateFormat = "Mon, Jan 2, 2006"
 
 [Permalinks]
     post = "/:filename/"
+    case_study ="/:filename/"
 
 [taxonomies]
 	author = "authors"
 	tag = "tags"
 	category = "categories"
 	featured_image = "feature_image"
+    site_link = "site_link"
 
 [privacy]
   [privacy.disqus]

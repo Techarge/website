@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head.html" . }}
+
+    <title>{{.Title}}</title>
+<body>
+<section class="relative overflow-x-hidden">
+    {{ partial "contact.html" . }}
+    {{ partial "cookie-banner.html" . }}
+    {{ partial "header/site-nav.html" . }}
+        <div class="container">
+        <h2 class="mt-30px mb-10px">{{.Title}}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div>
+           <p class="mb-10px inline text-tc-dark-grey">{{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th {{ end }}{{ .Date.Format "January 2006" }}</p>
+        </div>
+            <div class="introduction">
+            {{ range .Param "site_link" }}
+        <a class="hover:text-tc-orange" href={{.}}>{{ .}}</a>
+        {{ end }}
+            </div>
+        </div>
+        {{ range .Param "featured_image" }}
+        <img class="w-full " src="{{ . }}">
+        {{ end }}
+        <section class="my-20px blog-content">{{.Content}}</section>
+                    <button class="button-medium mt-10px"><a href="/posts"><img class="inline transform rotate-180" alt="arrow" src="/images/arrow right.svg" width="15" height="15"> Back to all Blogs</a></button>
+
+    </div>
+    <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
+        {{ partial "subscribe.html" . }}
+    </div>
+    {{ partial "footer.html" . }}
+</section>
+
+</body>
+</html>

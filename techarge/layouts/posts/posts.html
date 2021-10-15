@@ -14,7 +14,7 @@
         <h2>Techarge Blog</h2>
         <a class="hover:text-tc-orange pt-20px ml-5px" href="/rss">View RSS Feed<img class="inline ml-2" alt="rss icon" src="/images/rss.png" width="15" height="15"></a>
         <ul class="grid md:grid-cols-2 gap-30px mt-30px">
-            {{range .Site.RegularPages}}
+            {{range .Pages}}
             <div class="bg-tc-green  hover:bg-tc-dark-green p-4 rounded-20px"><a href="{{.RelPermalink}}">
                 {{ range .Param "featured_image" }}
                 <img class="border-tc-grey" src="{{ . }}">
