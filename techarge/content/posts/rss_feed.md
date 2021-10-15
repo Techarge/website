@@ -2,7 +2,7 @@
 title: "RSS Feed"
 date: 2021-10-13T12:14:56+01:00
 draft: False
-summary: Read All about 
+summary: A way to standardise your content so users can easily keep up with your latest post updates without storing user emails.
 authors: ["Zoe Utting"]
 featured_image: ["/images/RSS_BLOG.png"]
 categories: ["Latest Tech"]
