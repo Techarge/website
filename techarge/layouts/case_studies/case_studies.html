@@ -10,7 +10,7 @@
     {{ partial "cookie-banner.html" . }}
     {{ partial "header/site-nav.html" . }}
     {{.Content}}
-     <div class="hidden sm:flex js-show-right absolute -right-10px lg:-right-180px top-214px">
+    <div class="hidden sm:flex js-show-right absolute -right-10px lg:-right-180px top-214px">
         <div class="rounded-tl-130px lg:rounded-tl-50% w-210px h-239px lg:w-424px lg:h-481px bg-tc-grey absolute right-0 bottom-0">
 
         </div>
@@ -29,9 +29,8 @@
         <ul class="grid lg:grid-cols-3 md:grid-cols-2  gap-30px mt-100px md:-mt-100px">
             {{range .Pages }}
             <div class="rounded-20px"><a href="{{.RelPermalink}}">
-                {{ range .Param "featured_image" }}
-                <img class="border-tc-grey rounded-t-20px" src="{{ . }}">
-                {{ end }}</a>
+               <img src="{{ .Params.featured_image}}" alt="{{ .Params.featured_image_alt }}">
+            </a>
                 <div class="border-tc-grey border-2 p-2 rounded-b-20px">
                     <h3 class="mb-10px"><a href="{{.RelPermalink}}">{{.Title}}</a></h3>
                     <p class="my-10px"><a href="{{.RelPermalink}}">{{ .Date.Format "2" }}{{ if in (slice 1 21 31)

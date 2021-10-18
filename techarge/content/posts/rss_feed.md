@@ -4,7 +4,8 @@ date: 2021-10-13T12:14:56+01:00
 draft: False
 summary: A way to standardise your content so users can easily keep up with your latest post updates without storing user emails.
 authors: ["Zoe Utting"]
-featured_image: ["/images/RSS_BLOG.png"]
+featured_image: /images/RSS_BLOG.png
+featured_image_alt: RSS Feed title with RSS icon
 categories: ["Latest Tech"]
 ---
 We have recently added the option for our users to view our blog as an RSS Feed in XML which, you can find a link to on our main blog page.

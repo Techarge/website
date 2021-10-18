@@ -11,14 +11,14 @@
     {{ partial "header/site-nav.html" . }}
     {{.Content}}
     <div class="container mt-30px">
-        <h2>Techarge Blog</h2>
+        <h1>Techarge Blog</h1>
         <a class="hover:text-tc-orange pt-20px ml-5px" href="/rss">View RSS Feed<img class="inline ml-2" alt="rss icon" src="/images/rss.png" width="15" height="15"></a>
         <ul class="grid md:grid-cols-2 gap-30px mt-30px">
             {{range .Pages}}
             <div class="bg-tc-green  hover:bg-tc-dark-green p-4 rounded-20px"><a href="{{.RelPermalink}}">
-                {{ range .Param "featured_image" }}
-                <img class="border-tc-grey" src="{{ . }}">
-                {{ end }}</a>
+
+            <img src="{{ .Params.featured_image}}" alt="{{ .Params.featured_image_alt }}"></a>
+
                 <h3 class="my-10px"><a href="{{.RelPermalink}}">{{.Title}}</a></h3>
                 <p class="my-10px"><a href="{{.RelPermalink}}">{{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th {{ end }}{{ .Date.Format "January 2006" }}</a></p>
 

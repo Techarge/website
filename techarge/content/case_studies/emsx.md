@@ -4,7 +4,8 @@ date: 2021-09-07T12:14:56+01:00
 draft: False
 summary: Read All about our process creating EMSX - A Workflow systems enabling universities to coordinate Vet Students with work experience placements
 site_link: ["https://emsx.vet/"]
-featured_image: ["/images/Emsx-blog.png"]
+featured_image: /images/Emsx-blog.png
+featured_image_alt: Emsx Logo with Mobile Version of the site
 ---
 For our latest client, we are pleased to announce the launch of https://emsx.vet. The purpose of this platform is to assist Vet students undertaking their studies in the UK to find work experience placements as part of thier extra murial studies. The site has a comprehensive list of all vet practises in the UK and allows students to search a given location and filter by requirements such as speciality or species. 
 

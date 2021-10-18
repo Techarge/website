@@ -5,7 +5,8 @@ draft: False
 summary: Read about the Latest Tech in 2021 we have been using in some of our projects
 authors: ["Ling Li"]
 categories: ["Web Development"]
-featured_image: ["/images/blog-placeholder.jpeg"]
+featured_image: /images/blog-placeholder.jpeg
+featured_image_alt: Laptop at desk
 ---
 ## Tech in 2021
 ![](/images/laptop.svg)
