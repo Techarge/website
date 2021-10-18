@@ -267,6 +267,9 @@ display: block;
 .blog-content a:hover {
     color: #FF8C21;
 }
+.blog-content img {
+    margin: auto;
+}
 code {
     background: #f3f4f6;
     padding: 0.25rem;

@@ -32,7 +32,7 @@
                <img src="{{ .Params.featured_image}}" alt="{{ .Params.featured_image_alt }}">
             </a>
                 <div class="border-tc-grey border-2 p-2 rounded-b-20px">
-                    <h3 class="mb-10px"><a href="{{.RelPermalink}}">{{.Title}}</a></h3>
+                    <h2 class="mb-10px"><a href="{{.RelPermalink}}">{{.Title}}</a></h2>
                     <p class="my-10px"><a href="{{.RelPermalink}}">{{ .Date.Format "2" }}{{ if in (slice 1 21 31)
                         .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{
                         else }}th {{ end }}{{ .Date.Format "January 2006" }}</a></p>
