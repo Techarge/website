@@ -1,10 +1,12 @@
+<label>
 <h3 class="flex">Subscribe to the latest tech trends</h3>
 <form id="signup-form" class="subscribe">
 <input type="email" id="signup-email" class="border-b border-tc-orange text-orange outline-none w-full h-26px placeholder-tc-orange"
        placeholder="your email">
  <p id="email-status"></p>
- <a onClick="subscribe()" id="signup-button" class="button-small mt-20px inline-flex hover:text-tc-orange">Sign up</a>
+ <button onClick="subscribe()" id="signup-button" class="button-small mt-20px inline-flex hover:text-tc-orange">Sign up</button>
 </form>
+</label>
 <script>
  function subscribe() {
         const emailValue = document.querySelector('#signup-email').value;
