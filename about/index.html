@@ -252,30 +252,30 @@ Happy clients</h4>
 <h2 class="pb-10px md:pb-40px lg:pb-20px">Our team</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 md:gap-20px gap-25px">
 <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center">
-<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Ling Li image" src=/images/ling.png width=149 height=149>
+<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Photograph of Ling Li in Black and White  " src=/images/ling.png width=149 height=149>
 <h2 class="text-center text-20px">Ling</h2>
 <p>Ling is the Founder of Techarge, with over 25 years of experience in building software and delivering projects. Handling and contributing to projects throughout, with a track record for delivery and communication.</p>
 </div>
 <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center">
-<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Nina hundt image" src=/images/nina.png width=149 height=149>
+<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Photograph of Nina hundt in Black and White" src=/images/nina.png width=149 height=149>
 <h2 class="text-center text-20px">Nina</h2>
 <p>Nina is our UI/UX lead, responsible for all UX/UI designs for all our projects. With over 20 years of
 experience in the graphic and UI design world, your prototype design will be created in Figma in no
 time at all.</p>
 </div>
 <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center">
-<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto filter grayscale" alt="Zoe Utting image" src=/images/zoe.png width=149 height=149>
+<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto filter grayscale" alt="Photograph of Zoe Utting in Black and White" src=/images/zoe.png width=149 height=149>
 <h2 class="text-center text-20px">Zoe</h2>
 <p>Zoe is our Front-end Developer, responsible for converting Nina's fantastic Figma creations into
 HTML and CSS pages. Each page is made pixel perfect whilst being responsive on all devices from mobiles to desktops.</p>
 </div>
 <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center">
-<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Hamed Pour image" src=/images/hamed.png width=149 height=149>
+<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Photograph of Hamed Pour in Black and White" src=/images/hamed.png width=149 height=149>
 <h2 class="text-center text-20px">Hamed</h2>
 <p>Hamed is our Javascript wizard, responsible for making Zoe's HTML & CSS pages come to life. Each script makes the website magical for user interaction whilst adding extra style, functionality and usability.</p>
 </div>
 <div class="rounded-t-20px rounded-r-20px bg-tc-grey py-36px px-20px text-center">
-<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Dominic Langsdale image" src=/images/dominic.png width=149 height=149>
+<img class="bg-white xs:w-165px xs:h-165px rounded-full mb-13px md:mb-15px m-auto" alt="Photograph of Dominic Langsdale in Black and White" src=/images/dominic.png width=149 height=149>
 <h2 class="text-center text-20px">Dominic</h2>
 <p>Dominic is our back-end Developer, running the behind the scenes of all our projects. Adding functionality whilst Deploying and scaling our projects to handle thousands of users concurrently. </p>
 </div>
@@ -291,14 +291,13 @@ HTML and CSS pages. Each page is made pixel perfect whilst being responsive on a
 </div>
 </div>
 <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
-<label>
-<h3 class=flex>Subscribe to the latest tech trends</h3>
+<label for=signup-email>
+<h3 class=flex>Subscribe to the latest tech trends</h3></label>
 <form id=signup-form class=subscribe>
 <input type=email id=signup-email class="border-b border-tc-orange text-orange outline-none w-full h-26px placeholder-tc-orange" placeholder="your email">
 <p id=email-status></p>
 <button onclick=subscribe() id=signup-button class="button-small mt-20px inline-flex hover:text-tc-orange">Sign up</button>
 </form>
-</label>
 <script>function subscribe(){var c,d,a;const b=document.querySelector('#signup-email').value;c=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,c.test(b)?(document.getElementById("email-status").innerHTML='Thanks for your email, we are adding you to our subscriptions.',d="https://email.techarge.co.uk/api/collect_email_2?email="+b+"&another=abv",a=new XMLHttpRequest,a.open("GET",d,!0),a.onload=function(){if(this.status>=200&&this.status<400){var a=this.response;console.log(a),console.log("thank you for signing up!"),window.location.replace("/thanks.html")}else console.log("There seems to be a error!")},a.onerror=function(c,a,b){console.log("response:"+a+" text:"+b)},a.send()):document.getElementById("email-status").innerHTML='Please enter a valid email address.'}</script>
 </div>
 </section>

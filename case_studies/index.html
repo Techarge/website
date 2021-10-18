@@ -116,7 +116,7 @@ Contact
 <div class="container mt-30px relative">
 <ul class="grid lg:grid-cols-3 md:grid-cols-2 gap-30px mt-100px md:-mt-100px">
 <div class=rounded-20px><a href=/case_studies/emsx/>
-<img class="border-tc-grey rounded-t-20px" src=/images/Emsx-blog.png>
+<img src=/images/Emsx-blog.png alt="Emsx Logo with Mobile Version of the site">
 </a>
 <div class="border-tc-grey border-2 p-2 rounded-b-20px">
 <h3 class=mb-10px><a href=/case_studies/emsx/>EMSX</a></h3>
@@ -126,14 +126,13 @@ Contact
 </div>
 </ul>
 <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
-<label>
-<h3 class=flex>Subscribe to the latest tech trends</h3>
+<label for=signup-email>
+<h3 class=flex>Subscribe to the latest tech trends</h3></label>
 <form id=signup-form class=subscribe>
 <input type=email id=signup-email class="border-b border-tc-orange text-orange outline-none w-full h-26px placeholder-tc-orange" placeholder="your email">
 <p id=email-status></p>
 <button onclick=subscribe() id=signup-button class="button-small mt-20px inline-flex hover:text-tc-orange">Sign up</button>
 </form>
-</label>
 <script>function subscribe(){var c,d,a;const b=document.querySelector('#signup-email').value;c=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,c.test(b)?(document.getElementById("email-status").innerHTML='Thanks for your email, we are adding you to our subscriptions.',d="https://email.techarge.co.uk/api/collect_email_2?email="+b+"&another=abv",a=new XMLHttpRequest,a.open("GET",d,!0),a.onload=function(){if(this.status>=200&&this.status<400){var a=this.response;console.log(a),console.log("thank you for signing up!"),window.location.replace("/thanks.html")}else console.log("There seems to be a error!")},a.onerror=function(c,a,b){console.log("response:"+a+" text:"+b)},a.send()):document.getElementById("email-status").innerHTML='Please enter a valid email address.'}</script>
 </div>
 </div>

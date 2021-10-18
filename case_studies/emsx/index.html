@@ -110,21 +110,20 @@ Contact
 <a class=hover:text-tc-orange href=https://emsx.vet/>https://emsx.vet/</a>
 </div>
 </div>
-<img class=w-full src=/images/Emsx-blog.png>
+<img class=w-full src=/images/Emsx-blog.png alt="Emsx Logo with Mobile Version of the site">
 <section class="my-20px blog-content"><p>For our latest client, we are pleased to announce the launch of <a href=https://emsx.vet>https://emsx.vet</a>. The purpose of this platform is to assist Vet students undertaking their studies in the UK to find work experience placements as part of thier extra murial studies. The site has a comprehensive list of all vet practises in the UK and allows students to search a given location and filter by requirements such as speciality or species.</p>
 <p>Vet students can create an account on the platform and save a list of their favourite vet practises as well as apply directly to each practise either on mobile or desktop. The site was built and launched in record time (&lt;6m from initial design through to implementation, testing and deployment). We choose a mixed tech stack of Wagtail/Django to allow for easier management of vet practise information mixed with Svelte in the frontend to provide a fast and responsive frontend for users.</p>
 </section>
 <button class="button-medium mt-10px"><a href=/posts><img class="inline transform rotate-180" alt=arrow src="/images/arrow right.svg" width=15 height=15> Back to all Blogs</a></button>
 </div>
 <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
-<label>
-<h3 class=flex>Subscribe to the latest tech trends</h3>
+<label for=signup-email>
+<h3 class=flex>Subscribe to the latest tech trends</h3></label>
 <form id=signup-form class=subscribe>
 <input type=email id=signup-email class="border-b border-tc-orange text-orange outline-none w-full h-26px placeholder-tc-orange" placeholder="your email">
 <p id=email-status></p>
 <button onclick=subscribe() id=signup-button class="button-small mt-20px inline-flex hover:text-tc-orange">Sign up</button>
 </form>
-</label>
 <script>function subscribe(){var c,d,a;const b=document.querySelector('#signup-email').value;c=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,c.test(b)?(document.getElementById("email-status").innerHTML='Thanks for your email, we are adding you to our subscriptions.',d="https://email.techarge.co.uk/api/collect_email_2?email="+b+"&another=abv",a=new XMLHttpRequest,a.open("GET",d,!0),a.onload=function(){if(this.status>=200&&this.status<400){var a=this.response;console.log(a),console.log("thank you for signing up!"),window.location.replace("/thanks.html")}else console.log("There seems to be a error!")},a.onerror=function(c,a,b){console.log("response:"+a+" text:"+b)},a.send()):document.getElementById("email-status").innerHTML='Please enter a valid email address.'}</script>
 </div>
 <footer class="bg-tc-grey pt-75px pb-70px">
