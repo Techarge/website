@@ -4,6 +4,10 @@ module.exports = {
         safelist: [
             'animate-slideInFromRight',
             'animate-slideInFromLeft',
+            'opacity-100',
+            'opacity-75',
+            'opacity-25',
+            'opacity-0',
         ]
     },
     theme: {

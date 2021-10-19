@@ -4,7 +4,7 @@ const callback = function (entries) {
         if (entry.isIntersecting) {
             entry.target.classList.remove("opacity-0");
             entry.target.classList.add("animate-slideInFromRight");
-            entry.target.classList.add("opacity-1");
+            entry.target.classList.add("opacity-100");
 
         }
     });
@@ -25,7 +25,7 @@ const callback2 = function (entries2) {
         if (entry2.isIntersecting) {
             entry2.target.classList.remove("opacity-0");
             entry2.target.classList.add("animate-slideInFromLeft");
-            entry2.target.classList.add("opacity-1");
+            entry2.target.classList.add("opacity-100");
 
         }
     });
