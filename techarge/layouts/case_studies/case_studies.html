@@ -26,7 +26,7 @@
     </section>
     <div class="container mt-30px relative">
 
-        <ul class="grid lg:grid-cols-3 md:grid-cols-2  gap-30px mt-100px md:-mt-100px">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2  gap-30px mt-100px md:-mt-100px">
             {{range .Pages }}
             <div class="rounded-20px"><a href="{{.RelPermalink}}">
                <img src="{{ .Params.featured_image}}" alt="{{ .Params.featured_image_alt }}">
@@ -41,7 +41,7 @@
 
                 {{end}}
             </div>
-        </ul>
+        </div>
         <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
             {{ partial "subscribe.html" . }}
         </div>
