@@ -1,6 +1,11 @@
 module.exports = {
-    purge: ['layouts/**/*.html'],
-    darkMode: false, // or 'media' or 'class'
+    purge: {
+        content: ['layouts/**/*.html'],
+        safelist: [
+            'animate-slideInFromRight',
+            'animate-slideInFromLeft',
+        ]
+    },
     theme: {
         container: {
             center: true,
@@ -21,7 +26,7 @@ module.exports = {
         },
         extend: {
             lineHeight: {
-                 '14': '3.5rem',
+                '14': '3.5rem',
                 '24px': '24px',
                 '42px': '42px',
             },
@@ -30,7 +35,7 @@ module.exports = {
                 '2': 2,
                 '3': 3,
                 '8': 8,
-                 '9': 9,
+                '9': 9,
                 '10': 10,
             },
             colors: {
@@ -256,7 +261,7 @@ module.exports = {
                 '109px': '109px',
                 '110px': '110px',
                 '115px': '115px',
-                 '120px': '120px',
+                '120px': '120px',
                 '128px': '128px',
                 '130px': '130px',
                 '150px': '150px',
@@ -266,7 +271,7 @@ module.exports = {
                 '195px': '195px',
                 '200px': '200px',
                 '250px': '250px',
-                 '280px': '280px',
+                '280px': '280px',
                 '300px': '300px',
 
             },
@@ -383,7 +388,7 @@ module.exports = {
                 'slideInFromLeft': 'slideInFromLeft 2s ease-in-out 0s 1',
                 'slideInFromRight': 'slideInFromRight 2s ease-in-out 0s 1',
                 'fadeInFromBottom': 'fadeInFromBottom 2s ease-in 0s 1',
-                 'bookScale': 'bookScale 2s ease-in 0s 1',
+                'bookScale': 'bookScale 2s ease-in 0s 1',
             },
             keyframes: {
                 slideInFromLeft: {
