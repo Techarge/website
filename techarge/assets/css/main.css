@@ -305,3 +305,36 @@ img[alt="RSS Icon for Blog"] {
     }
 }
 
+.animate-slideInFromLeft {
+animation: slideInFromLeft 2s ease-in-out 0s 1;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translatex(-1000px);
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        transform: translatex(-1000px);
+        opacity: 1;
+    }
+}
+
+.animate-slideInFromRight {
+animation: slideInFromRight 2s ease-in-out 0s 1;
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translatex(1000px);
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
