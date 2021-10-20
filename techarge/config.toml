@@ -36,6 +36,8 @@ copyright = "2021 Techarge. All rights reserved"
 	featured_image = "feature_image"
     featured_image_alt = "feature_image_alt"
     site_link = "site_link"
+    logo = "logo"
+intro = "intro"
 
 [privacy]
   [privacy.disqus]

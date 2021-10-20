@@ -9,23 +9,37 @@
     {{ partial "contact.html" . }}
     {{ partial "cookie-banner.html" . }}
     {{ partial "header/site-nav.html" . }}
-        <div class="container">
-        <h2 class="mt-30px mb-10px">{{.Title}}</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3">
-            <div>
-           <p class="mb-10px inline text-tc-dark-grey">{{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th {{ end }}{{ .Date.Format "January 2006" }}</p>
+    <section class="pb-80px mb-30px bg-tc-green">
+        <div class="container flex justify-between items-center flex-col md:flex-row pt-20px md:pt-0"><div class="rounded-full bg-white w-200px h-200px flex  items-center p-4">
+            <img class="m-auto flex" src="{{.Params.logo}}" alt="{{.Title}} Logo">
+
         </div>
-            <div class="introduction">
-            {{ range .Param "site_link" }}
+            <div>
+        <h2 class="mt-30px mb-10px">{{.Title}}</h2>
+             {{ range .Param "site_link" }}
         <a class="hover:text-tc-orange" href={{.}}>{{ .}}</a>
         {{ end }}
             </div>
-        </div>
+            <div>
+           <p class="mb-10px inline text-tc-dark-grey"> Published {{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th {{ end }}{{ .Date.Format "January 2006" }}</p>
+            </div>
+            </div>
+    </section>
+    <section class="container">
+        <div class="grid md:grid-cols-2 gap-4 items-center">
         <img class="w-full" src="{{ .Params.featured_image}}" alt="{{ .Params.featured_image_alt }}">
+            <div>
+        <section class="mb-30px">{{.Params.intro}}</section>
+                {{ range .Param "site_link" }}
+                <a class="button-medium" href="{{.}}"><button>Visit Site</button></a>
+                {{end}}
+            </div>
+        </div>
         <section class="my-20px blog-content">{{.Content}}</section>
                     <button class="button-medium mt-10px"><a href="/posts"><img class="inline transform rotate-180" alt="arrow" src="/images/arrow right.svg" width="15" height="15"> Back to all Blogs</a></button>
 
     </div>
+    </section>
     <div class="container grid gap-18px md:gap-21px lg:gap-85px grid-cols-1 lg:grid-cols-2 pt-90px md:pt-58px pb-48px md:pb-70px lg:pb-58px md:pr-270px lg:pr-0">
         {{ partial "subscribe.html" . }}
     </div>
