@@ -25,5 +25,11 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFFFFF",
-  "theme_color": "#AEDAD9"
+  "theme_color": "#AEDAD9",
+  "host_permissions":
+    "*://*.localhost:1313/",
+
+  "permissions":
+  ["cookies"]
+
 }
