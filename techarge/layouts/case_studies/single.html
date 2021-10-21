@@ -29,7 +29,15 @@
         <div class="grid md:grid-cols-2 gap-4 items-center">
         <img class="w-full" src="{{ .Params.featured_image}}" alt="{{ .Params.featured_image_alt }}">
             <div>
-        <section class="mb-30px">{{.Params.intro}}</section>
+        <section class="mb-10px">{{.Params.intro}}</section>
+                <p class="mb-10px font-semibold font-josefin">Built with</p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 items-center mb-30px gap-4">
+                {{ range .Param "technology" }}
+                    <div>
+                     <img class="w-20" src="/images/{{.}}-logo.svg" alt="{{.}} Logo in grayscale SVG">
+                    </div>
+                {{end}}
+                </div>
                 {{ range .Param "site_link" }}
                 <a class="button-medium" href="{{.}}"><button>Visit Site</button></a>
                 {{end}}
