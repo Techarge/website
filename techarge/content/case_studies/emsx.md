@@ -6,8 +6,8 @@ summary: Read All about our process creating EMSX - A Workflow systems enabling 
 site_link: ["https://emsx.vet/"]
 featured_image: /images/Emsx-blog.png
 featured_image_alt: Emsx Logo with Mobile Version of the site
-logo: /images/emsx-logo-inverted.png
-intro: EMSX - A Workflow systems enabling universities to coordinate Vet Students with work experience placements. The purpose of this platform is to assist Vet students undertaking their studies in the UK to find work experience placements as part of their extra murial studies. The site has a comprehensive list of all vet practises in the UK and allows students to search a given location and filter by requirements such as speciality or species. Vet students can create an account on the platform and save a list of their favourite vet practises as well as apply directly to each practise either on mobile or desktop. The site was built and launched in record time ( less than 6 months from initial design through to implementation, testing and deployment). We used a range of tech including Wagtail/Django to allow for easier management of vet practise information mixed with Svelte in the frontend to provide the map functionality.
+logo: /images/emsx-logo-inverted.pngheir studies in th
+intro: EMSX is a  Workflow systems enabling universities and Vet practices to coordinate Vet Students with work experience placements. The site was built and launched in less than 6 months from initial design through to implementation, testing and deployment.
 technology: ["wagtail","django","svelte","tailwind" ]
 ---
 ## Functionality and Features
