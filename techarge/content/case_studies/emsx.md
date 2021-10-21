@@ -6,7 +6,7 @@ summary: Read All about our process creating EMSX - A Workflow systems enabling 
 site_link: ["https://emsx.vet/"]
 featured_image: /images/Emsx-blog.png
 featured_image_alt: Emsx Logo with Mobile Version of the site
-logo: /images/emsx-logo-inverted.pngheir studies in th
+logo: /images/emsx-logo-inverted.png
 intro: EMSX is a  Workflow systems enabling universities and Vet practices to coordinate Vet Students with work experience placements. The site was built and launched in less than 6 months from initial design through to implementation, testing and deployment.
 technology: ["wagtail","django","svelte","tailwind" ]
 ---
