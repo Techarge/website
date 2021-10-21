@@ -13,7 +13,7 @@ technology: ["wagtail","django","svelte","tailwind" ]
 ## Functionality and Features
 - Account creation for Different user roles Students, Vet Practices and Universities
 - User dashboards for Universities, Students and Universities.
-- Ability to search for local Vet practise with extra sorting and filtering
+- Ability to search the whole of the UK Vet practises with extra sorting and filtering functionality
 - Students can directly contact the practices for placements
 - Students can Track Placements throughout the process
 - Placements can contact Students about placement availability
