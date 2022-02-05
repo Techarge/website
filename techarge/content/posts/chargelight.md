@@ -25,7 +25,7 @@ The app is available on google play store here:
 
 and on the Apple Store here:
 
-[ChargeLight Apple App](https://app.apple.com/store/apps/details?id=uk.co.chargelight.app "ChargeLight Apple App")
+[ChargeLight Apple App](https://apps.apple.com/us/app/chargelight/id1594588715 "ChargeLight Apple App")
 
 
 Looking forward to helping ChargeLight and their mission to help reduce our roadside emissions!
